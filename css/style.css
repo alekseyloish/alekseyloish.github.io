@@ -238,6 +238,11 @@ p {
 
 /*  ----------------------  */
 
+.wrapper {
+    text-align: center;
+}
+
+
 .wrapper h2 {
     text-align: center;
     margin: 100px auto;
