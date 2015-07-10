@@ -301,5 +301,95 @@ $(document).ready(function(){
 
     }
     ymaps.ready(init);
+    
+    
+    // show block in selection apartments
+    $(function() {
+        
+        var selectList = $('.select-list'),
+            selectChoice = $('.select-item'),
+            btnBack = $('.selection__back'),
+            overlay = $('.selection__overlay'),
+            selectionBox = $('.selection-box'),
+            selectionStage = $('.selection-stage');
+        
+        // click on any choice button
+        $(selectChoice).on('click', function(e) {
+            e.preventDefault();
+            
+            selectList.fadeOut(100);
+            overlay.fadeIn();
+            selectionBox.fadeIn();
+            selectionStage.first().fadeIn();
+            selectionStage.first().addClass('opened');
+            btnBack.fadeIn();
+        });
+        
+        // click on button 'Back'
+        $(btnBack).on('click', function(e) {
+            e.preventDefault();
+            
+            if ( !selectionStage.first().hasClass('opened') ) {
+                var $openedItem,
+                    selectionStageItems = selectionBox.children();
+
+                selectionStageItems.each(function() {
+                    var $this = $(this);
+                    
+                    if ( $this.hasClass('opened') ) {
+                        $openedItem = $this;
+                    }
+                });
+                
+                $openedItem.fadeOut();
+                $openedItem.removeClass('opened');
+                $openedItem.prev().fadeIn();
+                $openedItem.prev().addClass('opened');
+                
+            } else {
+                $(this).fadeOut();
+                $(this).removeClass('opened');
+                selectionBox.fadeOut();
+                overlay.fadeOut();
+                selectList.fadeIn();
+            }
+        });
+        
+        /*// click on a current selection stage
+        $(selectionStage).on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            
+            if ( selectionStage.last().hasClass('opened') ) {
+                return false;
+            } else {
+                $this.fadeOut();
+                $this.removeClass('opened');
+                $this.next().fadeIn();
+                $this.next().addClass('opened');
+            }
+        });*/
+    });
+    
+    $(function() {
+        
+        $('.image-map-area').maphilight({
+            fillColor: "ffffff",
+            fillOpacity: 0.7,
+            stroke: false
+        });
+        
+        /*$('.house-sector').mouseenter(function() {
+            var data = $('.house-sector').data('maphilight');
+            data.alwaysOn = !data.alwaysOn;
+            $('.house-sector').data('maphilight', data).trigger('alwaysOn.maphilight');
+        }).mouseleave(function() {
+            var data = $('.house-sector').data('maphilight');
+            data.alwaysOn = !data.alwaysOn;
+            $('.house-sector').data('maphilight', data).trigger('alwaysOn.maphilight');
+        });
+        */
+    });
+    
 
 });
