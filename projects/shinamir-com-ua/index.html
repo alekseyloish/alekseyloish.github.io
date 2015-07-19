@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>ШинаМир - Интернет-магазин шин и дисков в Украине</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
+        <link rel="stylesheet" href="js/lightbox/lightbox.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script src="js/owl-carousel/owl.carousel-min.js"></script>
+        <script src="js/lightbox/lightbox.min.js"></script>
+        
+        <script src="js/scripts.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- НАЧАЛО -->
+        
+        <div class="wrapper">
+            <!-- Шапка сайта -->
+            <header class="main-header">
+                <div class="top-panel">
+                    <div class="center-wrapper">
+                        <nav class="main-navigation">
+                            <ul>
+                                <li><a href="#">Шины</a></li>
+                                <li><a href="#">Диски</a></li>
+                                <li><a href="#">Аккумуляторы</a></li>
+                                <li><a href="#">Инструмент</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="account-log">
+                            <ul>
+                                <li><a href="#" class="reg-user">Регистрация</a></li>
+                                <li><a href="#" class="login-user">Мой гараж</a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- end center-wrapper -->
+                </div> <!-- end top-panel -->
+                <div class="content-header">
+                    <div class="center-wrapper">
+                        <div class="logo">
+                            <a href="#"><img src="images/logo.png" alt="ШинаМир Интернет-магазин шин и дисков" /></a>
+                        </div>
+                        <div class="search-block">
+                            <div class="contacts-phone">
+                                <span><i class="fa fa-phone"></i> 099 367-19-65; 097 602-82-80</span>
+                                <a href="#" class="callback">Заказать звонок</a>
+                            </div>
+                            <form action="#" method="get" class="form-search" id="form-search">
+                                <input type="search" class="input-search" placeholder="Поиск по сайту..." />
+                                <input type="submit" class="search-btn" value="" />
+                            </form>
+                        </div> <!-- end search-block -->
+                        <div class="basket">
+                            <p>Корзина:</p>
+                            <span class="basket-sum"><strong>1.861 грн</strong></span>
+                            <span class="count-product">4</span>
+                        </div> <!-- end basket -->
+                    </div>
+                </div> <!-- end content-header -->
+            </header> <!-- end main-header -->
+            <!-- конец Шапка сайта -->
+            
+            <section>
+                <div class="menu-filter">
+                    <div class="center-wrapper">
+                        <nav class="nav-filter">
+                            <ul>
+                                <li class="active">
+                                    <a href="#"><i class="icon-filter icon-filter-shina"></i>Подбор шин</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-filter icon-filter-disc"></i>Подбор дисков</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-filter icon-filter-avto"></i>Подбор по авто</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div> <!-- end menu-filter -->
+                <div class="filter-wrap">
+                    <div class="center-wrapper">
+                        <form action="#" method="get" class="filter-form">
+                            <select name="filter-form[]" id="shina-type" data-placeholder="Тип">
+                                <option value="">(все)</option>
+                                <option value="12">12</option>
+                                <option value="123">123</option>
+                                <option value="32">32</option>
+                            </select>
+                            <select name="filter-form[]" id="shina-type" data-placeholder="Сезон">
+                                <option value="">(все)</option>
+                                <option value="12">12</option>
+                                <option value="123">123</option>
+                                <option value="32">32</option>
+                            </select>
+                            <select name="filter-form[]" id="shina-type" data-placeholder="Ширина">
+                                <option value="">(все)</option>
+                                <option value="12">12</option>
+                                <option value="123">123</option>
+                                <option value="32">32</option>
+                            </select>
+                            <select name="filter-form[]" id="shina-type" data-placeholder="Профиль">
+                                <option value="">(все)</option>
+                                <option value="12">12</option>
+                                <option value="123">123</option>
+                                <option value="32">32</option>
+                            </select>
+                            <select name="filter-form[]" id="shina-type" data-placeholder="Диаметр">
+                                <option value="">(все)</option>
+                                <option value="12">12</option>
+                                <option value="123">123</option>
+                                <option value="32">32</option>
+                            </select>
+                            <input type="submit" class="filter-form-btn" value="Подобрать" />
+                        </form>
+                    </div>
+                </div> <!-- end filter-wrap -->
+            </section>
+            
+            <div class="main-content">
+                <div class="center-wrapper">
+                    <div class="choice-tyre tabs-block">
+
+                        <input type="radio" name="tabs" id="tab-1" checked="checked" />
+                            <label for="tab-1" title="Популярные размеры"><i class="fa fa-list"></i>Популярные размеры</label>
+                        <input type="radio" name="tabs" id="tab-2" />
+                            <label for="tab-2" title="Зимние">Зимние</label>
+                        <input type="radio" name="tabs" id="tab-3" />
+                            <label for="tab-3" title="Летние">Летние</label>
+                        <input type="radio" name="tabs" id="tab-4" />
+                            <label for="tab-4" title="Всесезонные">Всесезонные</label>
+
+                        <!-- Популярные размеры -->
+                        <section id="content-tab-1">
+                            <div class="size-list">
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R18</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                            </div>
+                            <div class="size-list">
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R15</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R16</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                            </div>
+                            <div class="size-list">
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R16</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                            </div>
+                            <div class="size-list">
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R18</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                            </div>
+                            <div class="size-list">
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R19</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                            </div>
+                        </section> <!-- конец Популярные размеры -->
+
+                        <!-- Зимние -->
+                        <section id="content-tab-2">
+                            <div class="size-list">
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R18</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                            </div>
+                        </section> <!-- конец Зимние -->
+
+                        <!-- Летние -->
+                        <section id="content-tab-3">
+                            <div class="size-list">
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R18</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                            </div>
+                            <div class="size-list">
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R19</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                            </div>
+                        </section> <!-- конец Летние -->
+
+                        <!-- Всесезонные -->
+                        <section id="content-tab-4">
+                            <div class="size-list">
+                                <ul class="size-tyres">
+                                    <li class="title"><a href="#">R19</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                    <li><a href="#">155/70 R13</a></li>
+                                </ul>
+                            </div>
+                        </section> <!-- конец Всесезонные -->
+                    </div> <!-- end choice-tyre -->
+
+                    <div class="popular-models">
+                        <span class="title">Популярные модели</span>
+                        <div class="carousel-nav">
+                            <a href="javascript:void(0);" class="nav-arrows left" id="arrow-left"><i class="fa fa-chevron-left"></i></a>
+                            <a href="javascript:void(0);" class="nav-arrows right" id="arrow-right"><i class="fa fa-chevron-right"></i></a>
+                        </div> <!-- end carousel-nav -->
+                        <div class="catalog-items owl-carusel" id="popular-catalog">
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-discount"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-novelty"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-bestseller"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-discount"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-bestseller"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-novelty"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-discount"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                        </div> <!-- end catalog-items -->
+                    </div> <!-- end popular-models -->
+                </div>
+            </div> <!-- end main-content -->
+            
+            <footer class="main-footer">
+                <div class="center-wrapper">
+                    <div class="info-magazin">
+                        <div class="logo">
+                            <a href="#"><img src="images/logo.png" alt="ШинаМир Интернет-магазин шин и дисков" /></a>
+                        </div>
+                        <p>Интернет магазин шин в Украине. Здесь автомобилисты подбирают шины</p>
+                        <div class="social">
+                            <span class="title">Следите за нами</span>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- end info-magazin -->
+                    <div class="footer-navs">
+                        <ul>
+                            <li class="title"><a href="#">Категории</a></li>
+                            <li><a href="#">Шины</a></li>
+                            <li><a href="#">Диски</a></li>
+                            <li><a href="#">Аккумуляторы</a></li>
+                            <li><a href="#">Инструмент</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-navs">
+                        <ul>
+                            <li class="title"><a href="#">Помощь</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contacts">
+                        <span class="title">Подписаться на нас:</span>
+                        <form action="#" method="get" class="form-subscribe" id="form-subscribe">
+                            <input type="email" class="input-email" placeholder="Введите e-mail" />
+                            <input type="submit" class="subscribe-ok" value="" />
+                        </form>
+                        <span class="title">Время работы</span>
+                        <p>
+                            Понедельник-Пятница с 9:00 до 18:00<br>Суббота с 10:00 до 15:00
+                        </p>
+                    </div> <!-- end footer-contacts -->
+                </div>
+            </footer> <!-- end main-footer -->
+            <footer class="bottom-footer">
+                <div class="center-wrapper">
+                    <div class="sponsor-banner">
+                        <img src="images/logo-sponsor.png" alt="ФорумБанк" />
+                        <span>Форум банк гарантирует возврат денег</span>
+                    </div>
+                    <div class="copyright-dev">
+                        <span>Разработка сайта</span>
+                    </div>
+                </div>
+            </footer> <!-- end bottom-footer -->
+            
+        </div> <!-- end wrapper -->
+        
+        
+        
+        <!-- КОНЕЦ -->
+        
+    </body>
+</html>

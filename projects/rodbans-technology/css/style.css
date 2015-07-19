@@ -1,0 +1,1167 @@
+/*   Подключаем стороние шрифты   */
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Semibold'), url('../fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff');
+} 
+/*   /Подключаем стороние шрифты   */
+
+body {
+    background: #0b2d87 url(../images/bg-main.jpg) repeat-y top;
+    color: #fff;
+    font: normal normal 12px/14px 'Arial', sans-serif;
+}
+
+a {
+    color: ;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 50px auto;
+}
+
+/* ----- /ШАПКА Сайта ----- */
+.top-header {
+    width: 100%;
+    height: 140px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.logo {
+    position: absolute;
+    bottom: 0; left: -25px;
+}
+.logo a {
+    display: block;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.header-contacts {
+    width: 50%;
+    max-width: 480px;
+    height: 100%;
+    float: right;
+}
+
+.contact-adress,
+.contact-phones {
+    position: relative;
+    width: 220px;
+    float: left;
+    margin-right: 10px;
+}
+
+.contact-buttons {
+    position: relative;
+}
+.contact-buttons a {
+    display: block;
+    border-radius: 6px;
+    width: 100%;
+    background: #fff;
+    color: #0b2d87;
+    text-align: center;
+    padding: 9px 0 8px;
+    text-transform: uppercase;
+    font-family: 'Myriad Pro', 'Myriad Pro Semibold', sans-serif;
+    font-weight: 500;
+}
+
+.leaf-decor-up,
+.leaf-decor-down {
+    display: block;
+    position: absolute;
+    z-index: -5;
+}
+    
+.leaf-decor-up {
+    width: 28px;
+    height: 35px;
+    background: url(../images/leaf-to-top.png);
+    top: -20px;
+    right: 65px;
+}
+
+.leaf-decor-down {
+    width: 31px;
+    height: 35px;
+    background: url(../images/leaf-to-down.png);
+    bottom: -20px;
+    right: -10px;
+}
+
+.contact-adress-text {
+    position: relative;
+    line-height: 18px;
+    margin-bottom: 5px;
+    height: 100px;
+}
+.contact-adress-text span.text {
+    position: absolute;
+    bottom: 5px;
+    vertical-align: bottom;
+}
+.contact-adress-text a {
+    color: #fff;
+    text-decoration: underline;
+}
+.contact-phones-block {
+    position: relative;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.choice-lang {
+    padding-top: 10px;
+}
+.choice-lang .lang-content {
+    background: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.choice-lang .lang-content a {
+    display: inline-block;
+    padding: 6px 6px 3px;
+    vertical-align: middle;
+}
+.choice-lang .lang-content a.active,
+.choice-lang .lang-content a:hover {
+    background: rgba(255, 255, 255, 0.35);;
+}
+.choice-lang .lang-content a:first-child {
+    margin-left: 10px;
+}
+
+.phone-number {
+    position: absolute;
+    bottom: 7px;
+}
+.phone-number span {
+    display: inline-block;
+    font-family: 'Myriad Pro', 'Myriad Pro Regular', sans-serif;
+    font-size: 28px;
+    line-height: 1.2em;
+}
+.phone-number a {
+    display: block;
+    color: #fff;
+    text-decoration: underline;
+}
+/* ----- /ШАПКА Сайта ----- */
+
+
+/* ----- Навигация на сайте ----- */
+.main-navigation {
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+    background: url(../images/nav-blick-left.png) no-repeat top left, url(../images/nav-blick-right.png) no-repeat top right, linear-gradient(to top, #9fce1d, #b6da52);
+    border-radius: 4px;
+}
+.main-navigation:after {
+    clear: both;
+}
+.main-navigation > ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 0 40px;
+}
+.main-navigation > ul > li {
+    float: left;
+    border-right: 1px dotted #7ea31c;
+}
+.main-navigation > ul > li:last-child {
+    border: none;
+}
+.main-navigation > ul > li > a {
+    display: block;
+    padding: 17px 23px;
+    font-family: 'Myriad Pro', 'Myriad Pro Regular', sans-serif;
+    font-size: 14px;
+    color: #517100;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.45);
+}
+.main-navigation > ul > li > a:hover {
+    background: url(../images/nav-hover.png) no-repeat top center;
+    background-size: 100%;
+}
+/* ----- /Навигация на сайте ----- */
+
+/* --- */
+
+/* ----- Контент страницы ----- */
+.content-container {
+    float: left;
+    width: 100%;
+    min-height: 350px;
+}
+
+.main-img-slide {
+    float: left;
+    width: 50%;
+}
+.main-img-slide img {
+    width: 100%;
+    height: auto;
+}
+.main-text-slide {
+    float: left;
+    width: 50%;
+    padding-top: 50px;
+}
+
+p.title-block {
+    margin: 0;
+    font-family: 'Myriad Pro', 'Myriad Pro Semibold', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 5px 0 20px;
+}
+
+.main-text-slide ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-text-slide ul li:before {
+    content: "-";
+    padding-right: 5px;
+}
+.main-text-slide ul li {
+    line-height: 25px;
+}
+.main-text-slide ul li:last-child {
+    margin-bottom: 20px;
+}
+
+    .global-buttons {
+    display: inline-block;
+    background: #fff;
+    border-radius: 7px;
+    font-family: 'Myriad Pro', 'Myriad Pro Semibold', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #092471 !important;
+}
+.more-info {
+    padding: 8px 25px;
+}
+
+/* ----- блок о компании ----- */
+.about-company-fluid {
+    clear: both;
+    float: left;
+    width: 100%;
+    background: rgba(0, 9, 60, 0.6);
+}
+.about-company-fluid .content-container {
+    padding-bottom: 50px;
+}
+
+.about-company-text {
+    float: left;
+    width: 72.916666%;
+    margin-right: 20px;
+}
+.about-company-text p.title-block {
+    font-weight: 500;
+}
+.about-company-text p:not(:first-of-type) {
+    margin-bottom: 25px;
+    line-height: 20px;
+}
+
+.to-contact-us {
+    float: left;
+    width: 22.916666%;
+}
+
+.to-contact-us-inner {
+    padding: 20px 15px 0px;
+    background: #fff;
+}
+
+span.title-contact-us {
+    display: block;
+    font-family: 'Myriad Pro', 'Myriad Pro Semibold', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #89bd00;
+    margin-bottom: 15px;
+}
+
+.contact-us-input {
+    padding: 0;
+    width: 95%;
+    height: 33px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    color: #788894;
+    outline: none;
+}
+/* --- настройка placeholder у input --- */
+input.contact-us-input[placeholder] { color: #788894;}
+input.contact-us-input::-webkit-input-placeholder { color: #788894;}
+input.contact-us-input::-moz-placeholder { color: #788894;}
+input.contact-us-input:-moz-placeholder { color: #788894;}
+input.contact-us-input:-ms-placeholder { color: #788894;}
+
+input.contact-us-input:focus::-webkit-input-placeholder { color: transparent;}
+input.contact-us-input:focus::-moz-placeholder { color: transparent;}
+input.contact-us-input:focus:-moz-placeholder { color: transparent;}
+input.contact-us-input:focus:-ms-placeholder { color: transparent;}
+/* --- /настройка placeholder у input --- */
+
+/* --- настройка placeholder у textarea --- */
+textarea.contact-us-textarea[placeholder] { color: #788894;}
+textarea.contact-us-textarea::-webkit-input-placeholder { color: #788894;}
+textarea.contact-us-textarea::-moz-placeholder { color: #788894;}
+textarea.contact-us-textarea:-moz-placeholder { color: #788894;}
+textarea.contact-us-textarea:-ms-placeholder { color: #788894;}
+
+textarea.contact-us-textarea:focus::-webkit-input-placeholder { color: transparent;}
+textarea.contact-us-textarea:focus::-moz-placeholder { color: transparent;}
+textarea.contact-us-textarea:focus:-moz-placeholder { color: transparent;}
+textarea.contact-us-textarea:focus:-ms-placeholder { color: transparent;}
+/* --- /настройка placeholder у textarea --- */
+
+.contact-us-textarea {
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+    width: 87%;
+    height: 220px;
+    border: 1px solid #dfdfdf;
+    background: #fff;
+    outline: none;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    font-size: 12px;
+    color: #788894;
+    resize: none;
+}
+
+.form-bottom {
+    background: url(../images/form-bottom.png) no-repeat bottom left;
+    background-size: 100%;
+    height: 67px;
+}
+
+.contact-btn-submit {
+    background: linear-gradient(to top, #86b40b, #add43e);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 25px;
+    font-family: 'Myriad Pro', 'Myriad Pro Regular', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+    float: right;
+    margin-top: 15px;
+    margin-right: 5px;
+    outline: none;
+}
+.contact-btn-submit:hover {
+    background: linear-gradient(to top, #9dd30e, #b0db34);
+}
+/* ----- /блок о компании ----- */
+
+/* ----- блок НОВОСТИ и ВИДЕО ----- */
+.news-block,
+.video-block {
+    float: left;
+    width: 100%;
+    padding: 50px 0 15px;
+    border-bottom: 1px dashed #fff;
+    margin-bottom: 50px;
+}
+.news-block:after,
+.news-block-items:after {
+    clear: both;
+}
+.news-block-items,
+.video-block-items {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.news-item {
+    float: left;
+    width: 18.75%;
+    max-width: 220px;
+    margin: 0 30px;
+}
+.news-item img {
+    background: #eee;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+.title-news {
+    display: inline-block;
+    line-height: 1.5em;
+    text-decoration: underline;
+    color: #fff;
+}
+.news-item p {
+    margin: 5px 0;
+    font-size: 11px;
+    color: #d5d5d5;
+    line-height: 1.4em;
+}
+
+.show-all-news,
+.show-all-video {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+    padding: 6px 0;
+}
+
+.video-item {
+    float: left;
+    width: 43.75%;
+    max-width: 420px;
+    margin: 0 30px;
+}
+
+.video-item-title {
+    display: inline-block;
+    float: left;
+    width: 40%;
+    margin-left: 15px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: underline;
+    line-height: 1.4em;
+    margin-top: 15px;
+}
+
+.video-item-img {
+    float: left;
+}
+
+.video-block-items {
+    margin-bottom: 30px;
+}
+/* ----- /блок НОВОСТИ и ВИДЕО ----- */
+/* ----- /Контент страницы ----- */
+
+/* ----- блок ПОДВАЛ Сайта ----- */
+.main-footer {
+    clear: both;
+    float: left;
+    width: 100%;
+    min-width: 960px;
+    height: 155px;
+    background: rgba(0, 9, 60, 0.7);
+}
+
+.footer-wrapper {
+    width: 960px;
+    margin: 20px auto;
+    font-size: 11px;
+}
+.footer-wrapper a:hover {
+    text-decoration: none;
+}
+
+.footer-column {
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+.footer-column p {
+    margin: 3px 0;
+}
+
+.politic-links {
+    margin-bottom: 15px;
+}
+.politic-links > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.politic-links > ul > li > a {
+    display: block;
+    line-height: 1.5em;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.soc-links {
+    float: left;
+    width: 100%;
+}
+.soc-links > ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+.soc-links > ul > li {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.soc-links > ul > li:last-child {
+    margin-right: 0;
+}
+.soc-links > ul > li > a {
+    display: block;
+    text-decoration: none;
+}
+.soc-links > ul > li > a img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.soc-links > ul > li > a:hover img {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.support-rodbans {
+    padding-top: 15px;
+    text-align: center;
+}
+.support-rodbans a {
+    color: #aee242;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.footer-copyright {
+    padding-top: 25px;
+}
+.footer-copyright a {
+    color: #aee242;
+    text-decoration: underline;
+}
+.footer-column-last {
+    float: left;
+    width: 15.0%;
+}
+
+.brend-developers {
+    padding-top: 20px;
+    text-align: left;
+}
+.brend-developers p {
+    margin: 5px 0;
+}
+.brend-developers a {
+    display: inline-block;
+    color: #aee242;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+/* ----- /блок ПОДВАЛ Сайта ----- */
+
+/* --- */
+
+/* ----- Стили для страницы ПРОЕКТЫ ----- */
+/* --- Основная часть контента --- */
+.main-content {
+    float: left;
+    width: 63%;
+    min-width: 650px;
+    padding: 60px 0;
+    background: rgba(0, 9, 60, 0.6);
+    margin-right: 20px;
+}
+.main-content-inner {
+    float: right;
+    width: 620px;
+    padding: 0 20px 0 10px;
+}
+
+.main-content p.title-block {
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* --- /контент страницы проекты --- */
+.project-item {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.project-item-img {
+    float: left;
+    width: 34.375%;
+    margin-right: 20px;
+}
+.project-item-img img {
+    width: 100%;
+    height: auto;
+}
+.project-info {
+    float: left;
+    width: 60%;
+    line-height: 1.5em;
+}
+.project-info span {
+    display: inline-block;
+}
+.project-title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #b0d0fd;
+    text-decoration: underline;
+    line-height: 1.5em;
+}
+.project-adress {
+    margin: 10px 0;
+}
+.project-work i {
+    display: block;
+    font-style: normal;
+    color: #d5d5d5;
+}
+.project-work {
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+.project-show-link {
+    padding: 8px 17px 9px;
+}
+/* --- /контент страницы проекты --- */
+
+
+/* --- Оформление сайдбара --- */
+.right-sidebar {
+    float: left;
+    width: 35%;
+    min-width: 280px;
+    padding: 15px 0;
+}
+.right-sidebar-inner {
+    float: left;
+    width: 280px;
+}
+.sidebar-item {
+    float: left;
+    width: 100%;
+    margin-bottom: 45px;
+}
+.sidebar-item a {
+    color: #fff;
+    text-decoration: underline;
+}
+.sidebar-item a:hover {
+    text-decoration: none;
+}
+
+.sidebar-item-title {
+    margin: 0;
+    font-family: 'Myriad Pro', 'Myriad Pro Regular', sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+.equipment-item {
+    margin-bottom: 30px;
+}
+.equipment-item img {
+    display: inline-block;
+    border-radius: 10px;
+    background: #eee;
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.equipment-item a {
+    display: inline-block;
+    width: 62%;
+    vertical-align: middle;
+    line-height: 1.5em;
+}
+
+.equip-btn {
+    width: 132px;
+    padding: 7px 0;
+    margin-right: 10px;
+    text-align: center;
+}
+.equip-btn:last-of-type {
+    margin-right: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.useful-info-item {
+    margin-bottom: 30px;
+}
+.useful-info-item a {
+    display: block;
+    margin-bottom: 5px;
+}
+.useful-info-item .details-info {
+    display: block;
+    height: 60px;
+    font-size: 11px;
+    line-height: 1.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.show-all-article {
+    padding: 6px 20px 7px;
+}
+
+.article-item {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.article-item img {
+    background: #eee;
+    width: 180px;
+    height: auto;
+    margin-bottom: 5px;
+}
+.article-item p {
+    margin: 5px 0;
+    font-size: 11px;
+    color: #d5d5d5;
+    line-height: 1.5em;
+}
+/* --- /Оформление сайдбара --- */
+/* ----- /Стили для страницы ПРОЕКТЫ ----- */
+
+
+.about-company-details p {
+    line-height: 1.8em;
+    margin-bottom: 25px;
+    padding-right: 15px;
+}
+
+/* ----- Стили для страницы НОВОСТИ ----- */
+.news-block-item .news-date {
+    display: block;
+    width: 150px;
+    font-size: 11px;
+}
+.news-block-item .news-block-item-title {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 10px 0;
+    line-height: 1em;
+}    
+.news-block-item p {
+    margin-bottom: 20px;
+    line-height: 1.5em;
+    padding-right: 20px;
+}
+
+.news-block-item {
+    margin-bottom: 45px;
+}
+.news-block-item:last-of-type {
+    margin-bottom: 0;
+}
+/* ----- /Стили для страницы НОВОСТИ ----- */
+
+/* --- */
+
+/* ----- Стили для страницы ВИДЕО ----- */
+.video-block-item {
+    margin-bottom: 45px;
+}
+.video-block-item:last-of-type {
+    margin-bottom: 0;
+}
+.video-block-item .video-title {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.video-block-item p {
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+/* ----- /Стили для страницы ВИДЕО ----- */
+
+/* --- */
+
+/* ----- Стили для страницы КАК КУПИТЬ ----- */
+.how-buy-wrapper {
+    margin-bottom: 45px;
+}
+.how-buy-wrapper p {
+    line-height: 1.5em;
+    margin-bottom: 25px
+}
+
+.variant-list {
+    font-size: 14px;
+    font-weight: bold;
+}
+.how-buy-wrapper > ul {
+    margin: 0;
+    padding: 0;
+}
+.how-buy-wrapper > ul > li {
+    margin-bottom: 25px;
+    vertical-align: middle;
+    list-style: none;
+}
+.list-numeric {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1em;
+    margin-right: 15px;
+}
+
+.list-inner,
+.list-numeric {
+    display: inline-block;
+    vertical-align: middle;
+}
+.list-inner {
+    width: 90%;
+}
+.list-inner span {
+    font-weight: bold;
+}
+.list-inner p {
+    argin: 0;
+    margin: 5px 0;
+    line-height: 1.7em;
+}
+/* ----- /Стили для страницы КАК КУПИТЬ ----- */
+
+/* --- */
+
+/* ----- Стили для страницы ОБОРУДОВАНИЯ ----- */
+.main-equipment-item {
+    clear: both;
+    float: left;
+    margin-bottom: 50px;
+}
+.main-equipment-item:last-of-type {
+    margin-bottom: 0;
+}
+a.equip-title-link {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+
+.img-equip {
+    float: left;
+    width: 400px;
+    height: 320px;
+    text-align: center;
+    vertical-align: middle;
+    background: rgba(27, 120, 200, 0.20);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.img-equip img {
+    margin-top: 25px
+}
+
+/* --- стили для списка характеристик оборудования ---*/
+.equip-item-details {
+    float: left;
+    width: 200px;
+    margin-top: 20px;
+}
+.equip-item-details  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 50px;
+}
+.equip-item-details  ul li {
+    margin-bottom: 20px;
+    vertical-align: middle;
+}
+.equip-item-details  ul li:last-child {
+    margin-bottom: 0;
+}
+.equip-item-details  ul li img {
+    margin-right: 7px;
+}
+.equip-list-text,
+.equip-item-details  ul li img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.equip-list-text {
+    width: 160px;
+}
+.equip-list-text span {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.equip-list-text p {
+    margin: 0;
+    line-height: 1.25em;
+}
+/* --- /стили для списка характеристик ---*/
+/* ----- /Стили для страницы ОБОРУДОВАНИЯ ----- */
+
+/* --- */
+
+/* ----- Стили для страницы СЕРТИФИКАТЫ ----- */
+.certificates {
+    float: left;
+    width: 100%;
+}
+.certificates > span {
+    font-size: 11px;
+    display: block;
+    margin-bottom: 25px;
+    color: #d5d5d5;
+}
+
+.certificate-item {
+    float: left;
+    width: 190px;
+    height: auto;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.certificate-item:nth-child(3n+1) {
+    margin-right: 0;
+}
+.certificate-item:nth-child(5n) {
+    clear: both;
+}
+
+.certificate-item-img {
+    width: 100%;
+    height: 265px;
+    /*border: 1px solid #f4f4f4; /* убрать при вставке изображения сертификата */
+    margin-bottom: 10px;
+}
+.certificate-item-img img {
+    width: 100%;
+    height: auto;
+}
+.certificate-item a {
+    display: block;
+    height: 35px; 
+    color: #fff;
+    text-decoration: underline;
+    line-height: 1.4em;
+}
+.certificate-item a:hover {
+    text-decoration: none;
+}
+/* ----- /Стили для страницы СЕРТИФИКАТЫ ----- */
+
+/* --- */
+
+/* ----- Стили для страницы КОНТАКТЫ ----- */
+.contacts-page {
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+    background: rgba(0, 9, 60, 0.6);
+    margin-bottom: 50px;
+}
+.contacts-page-wrapper {
+    width: 940px;
+    margin: 0px auto;
+    padding: 0px 10px;
+}
+
+.contacts-page-inner {
+    float: left;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.left-sidebar {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+}
+
+.left-sidebar-inner {
+    float: left;
+    width: 100%;
+}
+
+.some-title {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+/* --- Стили оформления контактной формы --- */
+.main-contacts-form {
+    margin-bottom: 10px;
+}
+
+.main-contact-input {
+    display: block;
+    width: 95%;
+    height: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background: #24396f;
+    border: 1px solid #2b4486;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+.main-contacts-form label:first-of-type,
+.main-contact-input + label {
+    display: block;
+    line-height: 1.5em;
+}
+
+.main-contact-textarea {
+    display: block;
+    width: 90%;
+    height: 150px;
+    padding: 10px;
+    background: #24396f;
+    border: 1px solid #2b4486;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 15px;
+    resize: none;
+    outline: none;
+}
+.main-contact-input:focus,
+.main-contact-textarea:focus {
+    box-shadow: 0 0 7px #2f5bcb;
+}
+
+.btn-send {
+    border: none;
+    width: 120px;
+    height: 30px;
+    outline: none;
+}
+.btn-send:hover {
+    text-decoration: underline;
+}
+/* --- /Стили оформления контактной формы --- */
+
+/* --- Стили оформления основной части страницы КОНТАКТЫ --- */
+.contact-page-content {
+    float: left;
+    width: 72.9%;
+}
+
+.contact-page-content-inner {
+    float: left;
+    width: 100%;
+}
+
+.main-all-contacts {
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.main-contacts-map {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.contacts-column {
+    float: left;
+    width: 31.9%;
+    margin-right: 20px;
+}
+.contacts-column:last-of-type {
+    margin-right: 0;
+}
+.contacts-column:nth-of-type(2) {
+    width: 25%;
+    min-width: 150px;
+}
+
+.contacts-column p {
+    margin: 0;
+    margin-bottom: 15px;
+    line-height: 1.7em;
+}
+.contacts-column p.phone {
+    margin-bottom: 5px;
+}
+.contacts-column p.phone > span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+}
+.contacts-column .contact-buttons a {
+    position: relative;
+    z-index: 10;
+}
+.contacts-column .leaf-decor-up {
+    z-index: 5;
+}
+
+.tech-support span {
+    display: block;
+    line-height: 1.5em;
+}
+.tech-support a {
+    display: block;
+    color: #fff;
+    margin: 5px 0;
+    text-decoration: underline;
+}
+.tech-support a:hover {
+    text-decoration: none;
+}
+/* --- Стили оформления основной части страницы КОНТАКТЫ --- */
+
+/* ----- /Стили для страницы КОНТАКТЫ ----- */

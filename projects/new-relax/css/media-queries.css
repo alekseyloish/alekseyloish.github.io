@@ -1,0 +1,131 @@
+@media only screen and (max-width:925px) {
+	.wrapper { width: 95%;}
+	.content-text p { font-size: 90%;}
+	.main-girl { width:  45%;}
+	.content-text {width: 45%;}
+
+}
+@media only screen and (max-width:893px) {
+	.main-girl {
+        clear: both;
+        margin: 0 auto;
+        width: 65%;
+        text-align: center;
+        float: none;
+    }
+	.content-text {
+        clear: both;
+        margin: 0 auto;
+        padding-top: 25px;
+        width: 65%;
+        float: none;
+    }
+	.main-content {
+        margin:  0 auto;
+		margin-bottom:  60px;
+	}
+    body {
+        background-size: auto 100%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+	footer {
+		width:  95%;
+	}
+	.footer-text {
+		width:  70%;
+		font-size:  75%;
+	}
+	.main-girl {
+		width:  60%;
+	}
+	.alert-18 {
+		left:  20px;
+		top:  10px;
+	}
+    .content-text {
+		background:  rgba(255, 255, 255, 0.75);
+		border-radius:  15px;
+        margin-top: 15px;
+		padding:  20px 30px;
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width:670px) {
+	.main-girl img {
+        width: 100%;
+	}
+    .logo a {
+		font-size:  60px;
+	}
+	span.stiker-city {
+		font-size:  18px;
+		right:  -20px;
+		top:  4px;
+	}
+    .footer-text {
+        display: block;
+		width:  100%;
+		font-size:  80%;
+        padding: 5px 10px;
+	}
+    .mini-logo {
+        display: block;
+        margin: 0 auto;
+    }
+    span.tringle {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+	.logo {
+		width:  85%;
+	}
+	.header-title {
+		width:  85%;
+	}
+	p.main-title {
+		font-size:  22px;
+	}
+	.content-text p {
+		font-size:  12px;
+	}
+}
+
+@media only screen and (max-width:430px) {
+	span.stiker-city {
+		font-size:  16px;
+	}
+	.main-girl img {
+		width:  100%;
+	}
+	header {
+		margin-bottom:  15px;
+	}
+	.alert-18 {
+		height:  30px;
+		width:  30px;
+        background-size: 100%;
+	}
+}
+
+@media only screen and (max-width:385px) {
+	.logo a {
+		font-size:  48px;
+	}
+	span.stiker-city {
+		font-size:  14px;
+		right:  -10px;
+		top:  2px;
+	}
+	p.main-title {
+		font-size:  20px;
+	}
+	.header-title {
+		font-size:  12px;
+	}
+}
+

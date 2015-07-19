@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <title>ШинаМир - Интернет-магазин шин и дисков в Украине</title>
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.carousel.css" />
+        <link rel="stylesheet" href="js/owl-carousel/owl.theme.css" />
+        <link rel="stylesheet" href="js/lightbox/lightbox.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/modernizr-2.6.2.min.js"></script>
+        <script src="js/jquery.formstyler.min.js"></script>
+        <script src="js/owl-carousel/owl.carousel-min.js"></script>
+        <script src="js/lightbox/lightbox.min.js"></script>
+        <script src="js/jquery.loupe.min.js"></script>
+        
+        <script src="js/scripts.js"></script>
+        
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- НАЧАЛО -->
+        
+        <div class="wrapper">
+            <!-- Шапка сайта -->
+            <header class="main-header">
+                <div class="top-panel">
+                    <div class="center-wrapper">
+                        <nav class="main-navigation">
+                            <ul>
+                                <li><a href="#">Шины</a></li>
+                                <li><a href="#">Диски</a></li>
+                                <li><a href="#">Аккумуляторы</a></li>
+                                <li><a href="#">Инструмент</a></li>
+                                <li><a href="#">Аксессуары</a></li>
+                                <li><a href="#">Доставка</a></li>
+                                <li><a href="#">Оплата</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="account-log">
+                            <ul>
+                                <li><a href="#" class="reg-user">Регистрация</a></li>
+                                <li><a href="#" class="login-user">Мой гараж</a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- end center-wrapper -->
+                </div> <!-- end top-panel -->
+                <div class="content-header">
+                    <div class="center-wrapper">
+                        <div class="logo">
+                            <a href="#"><img src="images/logo.png" alt="ШинаМир Интернет-магазин шин и дисков" /></a>
+                        </div>
+                        <div class="search-block">
+                            <div class="contacts-phone">
+                                <span><i class="fa fa-phone"></i> 099 367-19-65; 097 602-82-80</span>
+                                <a href="#" class="callback">Заказать звонок</a>
+                            </div>
+                            <form action="#" method="get" class="form-search" id="form-search">
+                                <input type="search" class="input-search" placeholder="Поиск по сайту..." />
+                                <input type="submit" class="search-btn" value="" />
+                            </form>
+                        </div> <!-- end search-block -->
+                        <div class="basket">
+                            <p>Корзина:</p>
+                            <span class="basket-sum"><strong>1.861 грн</strong></span>
+                            <span class="count-product">4</span>
+                        </div> <!-- end basket -->
+                    </div>
+                </div> <!-- end content-header -->
+            </header> <!-- end main-header -->
+            <!-- конец Шапка сайта -->
+            
+            <section>
+                <div class="menu-filter">
+                    <div class="center-wrapper">
+                        <nav class="nav-filter">
+                            <ul>
+                                <li class="active">
+                                    <a href="#"><i class="icon-filter icon-filter-shina"></i>Подбор шин</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-filter icon-filter-disc"></i>Подбор дисков</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="icon-filter icon-filter-avto"></i>Подбор по авто</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div> <!-- end menu-filter -->
+                <div class="filter-wrap">
+                    <div class="center-wrapper">
+                        <form action="#" method="get" class="filter-form">
+                            <select name="filter-form[]" id="shina-type" data-placeholder="Тип">
+                                <option value="">(все)</option>
+                                <option value="12">12</option>
+                                <option value="123">123</option>
+                                <option value="32">32</option>
+                            </select>
+                            <select name="filter-form[]" id="shina-type" data-placeholder="Сезон">
+                                <option value="">(все)</option>
+                                <option value="12">12</option>
+                                <option value="123">123</option>
+                                <option value="32">32</option>
+                            </select>
+                            <select name="filter-form[]" id="shina-type" data-placeholder="Ширина">
+                                <option value="">(все)</option>
+                                <option value="12">12</option>
+                                <option value="123">123</option>
+                                <option value="32">32</option>
+                            </select>
+                            <select name="filter-form[]" id="shina-type" data-placeholder="Профиль">
+                                <option value="">(все)</option>
+                                <option value="12">12</option>
+                                <option value="123">123</option>
+                                <option value="32">32</option>
+                            </select>
+                            <select name="filter-form[]" id="shina-type" data-placeholder="Диаметр">
+                                <option value="">(все)</option>
+                                <option value="12">12</option>
+                                <option value="123">123</option>
+                                <option value="32">32</option>
+                            </select>
+                            <input type="submit" class="filter-form-btn" value="Подобрать" />
+                        </form>
+                    </div>
+                </div> <!-- end filter-wrap -->
+            </section>
+            
+            <div class="main-content">
+                <div class="center-wrapper">
+                    <div class="bread-crumbs">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Поиск шин</a></li>
+                            <li><a href="#">Модель</a></li>
+                        </ul>
+                    </div> <!-- end bread-crumbs -->
+                    <div class="model-card">
+                        <div class="model-card-image">
+                            <div class="main-image">
+                                <a href="images/model-img.jpg" data-lightbox="roadtrip" style="background-image: url(images/model-img.jpg);"></a>
+                                <span class="label label-discount"></span>
+                                <span class="season season-winter"></span>
+                            </div>
+                            <div class="small-images">
+                                <div class="img-item"><a href="images/model-img.jpg" data-lightbox="roadtrip" style="background-image: url(images/model-img.jpg);"></a></div>
+                                <div class="img-item"><a href="images/model-img.jpg" data-lightbox="roadtrip" style="background-image: url(images/model-img.jpg);"></a></div>
+                                <div class="img-item"><a href="images/model-img.jpg" data-lightbox="roadtrip" style="background-image: url(images/model-img.jpg);"></a></div>
+                            </div>
+                        </div> <!-- end model-card-image -->
+                        <div class="model-card-info">
+                            <div class="brief-description">
+                                <div class="rating">
+                                    <img src="images/rating.jpg" alt="" /> <!-- сюда вставить блок с рейтингом -->
+                                </div>
+                                <div class="model-title">
+                                    <h1>Bridgestone Blizzak</h1>
+                                    <span class="model-brend" style="background-image: url(images/logo-brend.jpg);"></span>
+                                </div>
+                                <div class="model-features">
+                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                            <td>Тип автомобиля:</td>
+                                            <td>легковой</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Тип автомобиля:</td>
+                                            <td>легковой</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div> <!-- end model-description -->
+                            <div class="delivery-info">
+                                <span class="title">Доставка по Днепропетровску</span>
+                                <p>осуществляется <strong>бесплатно</strong> при заказе одного комплекта (4 единиц) и более шин.</p>
+                            </div> <!-- end delivery-info -->
+                            
+                            <div class="model-sizes tabs-block">
+
+                                <input type="radio" name="tabs" id="tab-1" checked="checked" />
+                                    <label for="tab-1" title="Популярные размеры">Смотреть все</label>
+                                <input type="radio" name="tabs" id="tab-2" />
+                                    <label for="tab-2" title="Зимние">R15</label>
+                                <input type="radio" name="tabs" id="tab-3" />
+                                    <label for="tab-3" title="Летние">R16</label>
+                                <input type="radio" name="tabs" id="tab-4" />
+                                    <label for="tab-4" title="Всесезонные">R17</label>
+
+                                <!-- Популярные размеры -->
+                                <section id="content-tab-1">
+                                    <div class="model-list">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <th class="title">Название<br>модели</th>
+                                                <th>Индекс нагрузки</th>
+                                                <th>Индекс скорости</th>
+                                                <th>Цена</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr class="model-item">
+                                                <td><strong>Bridgestone Blizzak WS80</strong> 224/85 R15</td>
+                                                <td>98 - до 750 кг.</td>
+                                                <td>Т - 190 км/ч.</td>
+                                                <td class="price">1.700 грн</td>
+                                                <td class="click-buy"><a href="#">Купить</a></td>
+                                            </tr>
+                                            <tr class="model-item">
+                                                <td><strong>Bridgestone Blizzak WS80</strong> 224/85 R15</td>
+                                                <td>98 - до 750 кг.</td>
+                                                <td>Т - 190 км/ч.</td>
+                                                <td class="price">1.700 грн</td>
+                                                <td class="click-buy"><a href="#">Купить</a></td>
+                                            </tr>
+                                            <tr class="model-item">
+                                                <td><strong>Bridgestone Blizzak WS80</strong> 224/85 R15</td>
+                                                <td>98 - до 750 кг.</td>
+                                                <td>Т - 190 км/ч.</td>
+                                                <td class="price">1.700 грн</td>
+                                                <td class="click-buy"><a href="#">Купить</a></td>
+                                            </tr>
+                                            <tr class="model-item not-available">
+                                                <td><strong>Bridgestone Blizzak WS80</strong> 224/85 R15</td>
+                                                <td>98 - до 750 кг.</td>
+                                                <td>Т - 190 км/ч.</td>
+                                                <td class="price">нет в наличии</td>
+                                                <td class="click-buy"><button>Купить</button></td>
+                                            </tr>
+                                        </table>
+                                    </div> <!-- end model-list -->
+                                </section> <!-- конец Популярные размеры -->
+
+                                <!-- Зимние -->
+                                <section id="content-tab-2">
+                                    <div class="model-list">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <th class="title">Название<br>модели</th>
+                                                <th>Индекс нагрузки</th>
+                                                <th>Индекс скорости</th>
+                                                <th>Цена</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr class="model-item">
+                                                <td><strong>Bridgestone Blizzak WS80</strong> 224/85 R15</td>
+                                                <td>98 - до 750 кг.</td>
+                                                <td>Т - 190 км/ч.</td>
+                                                <td class="price">1.700 грн</td>
+                                                <td class="click-buy"><a href="#">Купить</a></td>
+                                            </tr>
+                                            <tr class="model-item not-available">
+                                                <td><strong>Bridgestone Blizzak WS80</strong> 224/85 R15</td>
+                                                <td>98 - до 750 кг.</td>
+                                                <td>Т - 190 км/ч.</td>
+                                                <td class="price">нет в наличии</td>
+                                                <td class="click-buy"><button>Купить</button></td>
+                                            </tr>
+                                        </table>
+                                    </div> <!-- end model-list -->
+                                </section> <!-- конец Зимние -->
+
+                                <!-- Летние -->
+                                <section id="content-tab-3">
+                                    <div class="model-list">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <th class="title">Название<br>модели</th>
+                                                <th>Индекс нагрузки</th>
+                                                <th>Индекс скорости</th>
+                                                <th>Цена</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr class="model-item">
+                                                <td><strong>Bridgestone Blizzak WS80</strong> 224/85 R15</td>
+                                                <td>98 - до 750 кг.</td>
+                                                <td>Т - 190 км/ч.</td>
+                                                <td class="price">1.700 грн</td>
+                                                <td class="click-buy"><a href="#">Купить</a></td>
+                                            </tr>
+                                            <tr class="model-item">
+                                                <td><strong>Bridgestone Blizzak WS80</strong> 224/85 R15</td>
+                                                <td>98 - до 750 кг.</td>
+                                                <td>Т - 190 км/ч.</td>
+                                                <td class="price">1.700 грн</td>
+                                                <td class="click-buy"><a href="#">Купить</a></td>
+                                            </tr>
+                                        </table>
+                                    </div> <!-- end model-list -->
+                                </section> <!-- конец Летние -->
+
+                                <!-- Всесезонные -->
+                                <section id="content-tab-4">
+                                    <div class="model-list">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <th class="title">Название<br>модели</th>
+                                                <th>Индекс нагрузки</th>
+                                                <th>Индекс скорости</th>
+                                                <th>Цена</th>
+                                                <th></th>
+                                            </tr>
+                                            <tr class="model-item not-available">
+                                                <td><strong>Bridgestone Blizzak WS80</strong> 224/85 R15</td>
+                                                <td>98 - до 750 кг.</td>
+                                                <td>Т - 190 км/ч.</td>
+                                                <td class="price">нет в наличии</td>
+                                                <td class="click-buy"><button>Купить</button></td>
+                                            </tr>
+                                        </table>
+                                    </div> <!-- end model-list -->
+                                </section> <!-- конец Всесезонные -->
+                            </div> <!-- end model-sizes -->
+                        </div> <!-- end model-card-info -->
+                        <div class="model-card-description">
+                            <div class="model-description tab-type-block">
+                                <div class="tab-type-title">
+                                    <span>Описание</span>
+                                </div>
+                                <div class="tab-type-content">
+                                    <p>
+                                        Шины Fulda EcoControl HP отличаются более коротким тормозным путем на сухой и мокрой дороге. Резина Fulda EcoControl HP - это прекрасное соотношение цены и качества для покупателей, которые много требуют от своих летних  шин. Эллиптический контур с разъединенными блоками плечевой зоны увеличивает пятно контакта шины с дорогой.
+                                    </p>
+                                    <p>
+                                        Высокий уровень безопасности в дождь достигнут благодаря использованию высокотехнологичной силикасодержащей резиновой семи.
+                                    </p>
+                                </div>
+                            </div> <!-- end model-description -->
+                            <div class="video-present">
+                                <iframe width="445" height="270" src="https://www.youtube.com/embed/2mCca3xQshA" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div> <!-- end model-card-description -->
+                    </div> <!-- end model-card -->
+                    
+                    <div class="user-reviews tab-type-block">
+                        <div class="tab-type-title">
+                            <span>Отзывы (4)</span>
+                        </div>
+                        <div class="tab-type-content">
+                            <div class="review-item">
+                                <div class="user-image">
+                                    <a href="#">
+                                        <img src="http://cs621220.vk.me/v621220792/141b6/TgaJrik61LU.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="user-post">
+                                    <div class="user-title">
+                                        <span><strong>Виктор</strong></span>
+                                        <span class="rating">
+                                            <img src="images/rating.jpg" alt="" />
+                                        </span>
+                                    </div>
+                                    <div class="user-text">
+                                        <p>
+                                            Проехал 500 км шина ведет себя хорошо как на льду так и на асфальте. Одна из лучших моделей для полноприводных сувов и паркетников. Проехал 500 км шина  себя хорошо как на льду так и на асфальте ...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> <!-- end post-table -->
+                            <span class="view-more-reviews">Смотреть ещё</span>
+                        </div> <!-- end tab-type-content -->
+                    </div> <!-- end user-reviews -->
+                    
+                    <div class="recently-viewed">
+                        <span class="title">Вы недавно смотрели</span>
+                        <div class="recently-catalog">
+                            
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Energy XM2</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-discount"></span>
+                                <a href="#" class="btn-buy">Купить</a>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+                            
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Energy XM2</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <a href="#" class="btn-buy">Купить</a>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+                            
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Energy XM2</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <a href="#" class="btn-buy">Купить</a>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+                            
+                        </div> <!-- end recently-catalog -->
+                    </div> <!-- end recently-viewed -->
+                    
+                    <div class="popular-models">
+                        <span class="title">Популярные модели</span>
+                        <div class="carousel-nav">
+                            <a href="javascript:void(0);" class="nav-arrows left" id="arrow-left"><i class="fa fa-chevron-left"></i></a>
+                            <a href="javascript:void(0);" class="nav-arrows right" id="arrow-right"><i class="fa fa-chevron-right"></i></a>
+                        </div> <!-- end carousel-nav -->
+                        <div class="catalog-items owl-carusel" id="popular-catalog">
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-discount"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-novelty"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-bestseller"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-discount"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-bestseller"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-novelty"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                            <!-- Единица товара -->
+                            <div class="catalog-item">
+                                <div class="catalog-item-img">
+                                    <img src="images/catalog-img.jpg" alt="" />
+                                </div>
+                                <div class="catalog-info">
+                                    <a href="#" class="catalog-title">Premium Contact 5</a>
+                                    <span class="brend">
+                                        <img src="images/logo-brend.png" alt="" />
+                                    </span>
+                                    <span class="season season-winter"></span>
+                                </div>
+                                <div class="catalog-price">
+                                    <span class="full-price">1.258 грн</span>
+                                    <span class="discount-price">918 грн</span>
+                                </div>
+                                <span class="label label-discount"></span>
+                            </div> <!-- end catalog-item -->
+                            <!-- конец Единица товара -->
+
+                        </div> <!-- end catalog-items -->
+                    </div> <!-- end popular-models -->
+                </div>
+            </div> <!-- end main-content -->
+            
+            <footer class="main-footer">
+                <div class="center-wrapper">
+                    <div class="info-magazin">
+                        <div class="logo">
+                            <a href="#"><img src="images/logo.png" alt="ШинаМир Интернет-магазин шин и дисков" /></a>
+                        </div>
+                        <p>Интернет магазин шин в Украине. Здесь автомобилисты подбирают шины</p>
+                        <div class="social">
+                            <span class="title">Следите за нами</span>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                    </div> <!-- end info-magazin -->
+                    <div class="footer-navs">
+                        <ul>
+                            <li class="title"><a href="#">Категории</a></li>
+                            <li><a href="#">Шины</a></li>
+                            <li><a href="#">Диски</a></li>
+                            <li><a href="#">Аккумуляторы</a></li>
+                            <li><a href="#">Инструмент</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-navs">
+                        <ul>
+                            <li class="title"><a href="#">Помощь</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Регистрация</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contacts">
+                        <span class="title">Подписаться на нас:</span>
+                        <form action="#" method="get" class="form-subscribe" id="form-subscribe">
+                            <input type="email" class="input-email" placeholder="Введите e-mail" />
+                            <input type="submit" class="subscribe-ok" value="" />
+                        </form>
+                        <span class="title">Время работы</span>
+                        <p>
+                            Понедельник-Пятница с 9:00 до 18:00<br>Суббота с 10:00 до 15:00
+                        </p>
+                    </div> <!-- end footer-contacts -->
+                </div>
+            </footer> <!-- end main-footer -->
+            <footer class="bottom-footer">
+                <div class="center-wrapper">
+                    <div class="sponsor-banner">
+                        <img src="images/logo-sponsor.png" alt="ФорумБанк" />
+                        <span>Форум банк гарантирует возврат денег</span>
+                    </div>
+                    <div class="copyright-dev">
+                        <span>Разработка сайта</span>
+                    </div>
+                </div>
+            </footer> <!-- end bottom-footer -->
+            
+        </div> <!-- end wrapper -->
+        
+        
+        
+        <!-- КОНЕЦ -->
+        
+    </body>
+</html>

@@ -1,0 +1,430 @@
+@media only screen and (max-width:1280px) {
+
+	.tc-card-min-img {
+		width: 150px;
+	}
+    
+    .tc-card-main-img {
+		width:  410px;
+	}
+
+	.ct-right-column {
+		width:  62%;
+	}
+    
+    .exp-materials-item {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+     .catalog-content {
+    	width: 68%;
+    }
+    
+    .products-added-list .row-table .td-table.pr-delete {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width:1024px) {
+
+	.tovar-card {
+		margin:  0 auto;
+		float:  none;
+		width:  95%;
+	}
+    
+    .tc-card-min-img {
+        width: 30%;
+    }
+    .tc-card-main-img {
+        width: 65%;
+    }
+    
+    .tc-card-info {
+        width: 47%;
+    }
+
+	.tc-card-buy {
+		width:  48%;
+		float:  left;
+	}
+
+	.ct-left-column {
+		clear:  both;
+		width:  100%;
+	}
+
+	.ct-right-column {
+		width:  100%;
+		min-width:  320px;
+	}
+
+	.tc-card-details-info > label {
+		padding:  15px 20px;
+	}
+
+	.our-benefits-item {
+		width:  50%;
+		margin-bottom:  10px;
+	}
+    
+    .products-added-list .row-table .td-table.pr-image,
+    .benefits-order {
+        display: none;
+    }
+    .products-added-list .row-table .td-table.pr-title,
+    .products-added-list .row-table .td-table.pr-name {
+        width: 45%;
+        min-width: 175px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .product-added-item .td-table.pr-price,
+    .product-added-item .td-table.pr-count,
+    .product-added-item .td-table.pr-sum,
+    .product-added-item .td-table.pr-delete,
+    .product-added-item .td-table.pr-title { padding: 25px 0; }
+    
+    .order-information {
+        text-align: center;
+    }
+    .oi-column-1-3 {
+        width: 45%;
+    }
+    .logo {
+        float: none;
+        width: 280px;
+        margin: 0 auto;
+    }
+    .main-header .search {
+        float: none;
+        width: 80%;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+    
+    .th-time-work {
+        float: none;
+        width: auto;
+        padding-top: 9px;
+        clear: both;
+    }
+    
+    .contacts-section .img-operator {
+        display: none;
+    }
+    .main-info-contact {
+        width: 100%;
+    }
+    
+    .top-panel-tovar .center-wrapper {
+        width: 95%;
+    }
+    .top-panel-tovar-buy {
+        padding: 25px 20px;
+    }
+    
+}
+
+@media only screen and (max-width:1023px) {
+    
+    .top-banner,
+    .left-sidebar,
+    .banner-slider-mini,
+    .bottom-panel-tovar {
+        display: none;
+    }
+    
+    .catalog-content {
+    	width: 100%;
+    }
+    
+    .catalog-list,
+    .categories-list {
+        text-align: center;
+    }
+    
+    .catalog-list .catalog-item,
+    .categories-list .categories-item {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    
+}
+
+@media only screen and (max-width:940px) {
+	.footer-navs {
+		width:  100%;
+	}
+	.footer-contacts {
+		width:  100%;
+	}
+    .top-panel-tovar {
+        display: none!important;
+    }
+}
+
+@media only screen and (max-width:840px) {
+    .main-nav {
+		padding:  0px 5%;
+	}
+    
+	.main-navigation,
+    .th-time-work,
+    .products-added-list .like-to-zakaz {
+		display:  none;
+	}
+    .mobile-navigation {
+        display: block;
+    }
+    
+    .main-navigation > ul {
+		display:  block;
+	}
+
+	.main-navigation > ul > li {
+		display:  block;
+		text-align:  left;
+        font-weight: 600;
+		padding-left:  0px;
+	}
+
+	.main-navigation .sub-navigation {
+		position:  relative;
+		display:  block;
+	}
+
+	.main-navigation .sub-navigation-inner {
+		width:  100%;
+		padding:  0;
+		height:  auto;
+		box-shadow:  none;
+		border-radius:  0;
+	}
+
+	.main-navigation .sub-navigation-inner > div {
+		width:  100%;
+		float:  none;
+		display:  block;
+		height:  auto;
+		border-top:  1px solid #c7c7c7;
+		padding-left:  0px;
+	}
+    
+    .main-navigation .sub-navigation-inner > div a:hover {
+        text-decoration: none;
+        background: #D7D7D7;
+    }
+
+	.main-navigation .sub-navigation-inner > div ul {
+		display:  none;
+	}
+
+	.main-navigation .sub-navigation-inner > div .sub-nav-title {
+        display: block;
+        padding: 10px;
+        margin-bottom: 0px;
+    }
+    
+    .tc-card-details-info > label {
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+	.footer-navs {
+		width:  100%;
+	}
+	.footer-contacts-col {
+		width:  40%;
+	}
+    
+    .catalog-nav li a {
+        padding: 15px 20px;
+    }
+    
+    .form-user-info > label:last-of-type {
+        word-break: normal;
+    }
+    
+    .main-info-contact .basic-contacts {
+        width: 45%;
+    }
+    .feedback-form {
+        width: 50%;
+    }
+    .feedback-form .feedback-input, .feedback-form .feedback-button, .feedback-form .feedback-textarea { width: 95%;}
+    
+    
+    
+}
+
+@media only screen and (max-width:705px) {
+    
+    .tc-card-min-img,
+    .product-added-item .td-table.pr-sum,
+    .products-added-list .row-table .td-table.pr-sum {
+        display: none;
+    }
+    
+    .tc-card-main-img,
+    .tc-card-info,
+    .tc-card-buy {
+        float: none;
+        margin: 0 auto 15px;
+        width: 85%;
+    }
+    .tc-card-main-img {
+        background-size: auto 90%;
+    }
+    
+    .tech-charact > table,
+    .opis-tovara,
+    .made-in {
+        width: 100%;
+    }
+    
+    .tc-card-details-info > label {
+        float: none;
+        font-size: 18px;
+        border-bottom: 1px solid #d1d2d3;
+    }
+    
+    .our-benefits {
+        display: none;
+    }
+    
+    .show-items-count {
+        display: none;
+    }
+    
+    .exp-materials-item {
+        float: none;
+        margin: 0 auto 10px;
+    }
+    
+    .order-information .oi-column-1-3 {
+        display: block;
+        margin: 0 auto 20px;
+        width: 95%;
+    }
+    .form-user-info > label {
+        display: block;
+    }
+    .form-user-info .form-user-input,
+    .form-user-info .input-user-textarea {
+        width: 95%;
+    }
+    
+    .main-info-contact .basic-contacts {
+        float: none;
+        margin: 0 auto;
+        width: 85%;
+        text-align: center;
+    }
+    .basic-contacts .w-time {
+        text-align: center;
+    }
+    .feedback-form {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        width: 85%;
+    }
+    
+}
+
+@media only screen and (max-width:640px) {
+
+    .th-left-nav {
+        border-bottom: 1px solid #d1d2d3;
+        width: 100%;
+    }
+    
+    .th-basket {
+        float: left;
+        padding-top: 5px;
+    }
+    
+    .main-header .contacts {
+        padding: 0;
+    }
+    .main-header .contacts-phone {
+        font-size: 18px;
+    }
+    
+    .catalog-nav li {
+        float: none;
+        border-bottom: 1px solid #d1d2d3;
+    }
+
+    .catalog-nav li:last-child {
+        border-bottom: none;
+    }
+    
+    .logo {
+        float: none;
+        margin: 0 auto 20px;
+        width: 275px;
+    }
+    
+    .main-header .contacts:before {
+        top: 7px;
+        left: 55px;
+    }
+    
+    
+}
+
+@media only screen and (max-width:535px) {
+    
+    
+    .products-added-list .row-table.header-list,
+    .product-added-item .td-table.pr-price,
+    .product-added-item .td-table.pr-count,
+    .product-added-item .td-table.pr-sum,
+    .product-added-item .td-table.pr-delete,
+    .products-added-list .row-table .td-table.pr-title {
+        font-size: 12px;
+        padding: 15px 0;
+    }
+    
+    .products-added-list .row-table .td-table.pr-price,
+    .products-added-list .row-table .td-table.pr-count,
+    .products-added-list .row-table .td-table.pr-sum,
+    .products-added-list .row-table .td-table.pr-delete {
+        min-width: 95px;
+        margin-left: 5px;
+    }
+    
+    .product-added-item .input-count-btn {
+        font-size: 12px;
+    }
+    
+    .product-added-item .input-count-product {
+        width: 35px;
+    }
+    
+    .content-basket .content-title h1 {
+        font-size: 22px;
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+    
+    .tc-card-main-img a {
+        height: 280px;
+    }
+    
+    .sort-type li {
+        margin-left: 15px;
+    }
+    
+    .footer-contacts-col .contacts {
+        display: none;
+    }
+    
+}

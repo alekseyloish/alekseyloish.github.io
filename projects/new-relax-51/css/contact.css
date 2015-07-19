@@ -1,0 +1,200 @@
+/*
+ * SimpleModal Contact Form
+ * http://www.ericmmartin.com/projects/simplemodal/
+ * http://code.google.com/p/simplemodal/
+ *
+ * Copyright (c) 2010 Eric Martin - http://ericmmartin.com
+ *
+ * Licensed under the MIT license:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *
+ * Revision: $Id: contact.css 254 2010-07-23 05:14:44Z emartin24 $
+ */
+
+/* Overlay */
+ #contact-overlay {
+    background-color:#111;
+    cursor:wait;
+}
+/* Container */
+ #contact-container {
+    font: 14px/22px'HelveticaNeueCyr', Verdana, Arial;
+    text-align:left;
+    width:445px;
+     height: 520px;
+     background: #fff url('../images/bg-modal.png') no-repeat top center;
+     background-size: 100%;
+     -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+#contact-container .contact-content {
+    color:#fff;
+    height:45px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+}
+#contact-container .contact-title {
+    clear: both;
+    display: block;
+    color:#fff;
+    font-size:14px;
+    line-height:1em;
+    margin:0;
+    padding: 10px 0;
+    text-align:center;
+}
+#contact-container h1.contact-title-h {
+    clear: both;
+    display: block;
+    color:#681c51;
+    font-size:14px;
+    line-height:1em;
+    margin:0;
+    padding: 10px 0;
+    text-align:center;
+}
+#contact-container .contact-loading {
+    background:url(../images/ajax-loading.gif) no-repeat;
+    height:64px;
+    padding:0;
+    position:absolute;
+    left: 50%;
+    margin-left: -32px;
+    width:64px;
+    z-index:8000;
+}
+#contact-container .contact-message {
+    clear: both;
+    margin-bottom: -10px;
+    text-align:center;
+}
+#contact-container .contact-error {
+    background:#ffc8c8;
+    border:1px solid #ff3f3f;
+    color: #333;
+    font-size:15px;
+    font-weight:normal;
+    line-height:15px;
+    margin:0 auto;
+    padding:3px;
+    width:80%;
+}
+#contact-container br {
+    clear:both;
+}
+#contact-container form {
+    margin:0;
+    padding:0;
+    width: 100%;
+    height: 385px;
+    margin-top: 35px;
+    position: relative;
+}
+#contact-container label {
+    display: block;
+    float: left;
+    font-size: 18px;
+    line-height: 1em;
+    padding-left: 25px;
+    margin-left: 150px;
+    text-align:left;
+    width:80px;
+    margin-top: 15px;
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+}
+#contact-container label.phone {
+    font-size: 20px;
+    color: #fff;
+    margin-top: 35px;
+    margin-left: 0;
+    width: 150px;
+}
+#contact-container .contact-input {
+    background:#fff;
+    border: none;
+    font-family:'HelveticaNeueCyr', Verdana, Arial;
+    font-size: 24px !important;
+    display: block;
+    float:left;
+    color: #443a3a;
+    padding-left: 20px;
+    margin-bottom:3px;
+    width:120px;
+    height: 45px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    /*---*/
+    position: absolute;
+    bottom: 55px;
+    left: 170px;
+}
+#contact-container .contact-input.phone {
+    font-size: 24px !important;
+    padding-left: 25px;
+    margin: 20px 0;
+    width: 225px;
+}
+#contact-container .contact-top {
+    background-color:#f8f8f8;
+    height: 0px;
+    margin:0;
+    padding:0;
+    -webkit-border-top-left-radius:8px;
+    -webkit-border-top-right-radius:8px;
+    -moz-border-radius-topleft:8px;
+    -moz-border-radius-topright:8px;
+    border-radius:8px 8px 0 0;
+}
+#contact-container .contact-bottom {
+    background-color:#333;
+    font-size:12px;
+    height:13px;
+    line-height:12px;
+    text-align:center;
+    -webkit-border-bottom-right-radius:8px;
+    -webkit-border-bottom-left-radius:8px;
+    -moz-border-radius-bottomright:8px;
+    -moz-border-radius-bottomleft:8px;
+    border-radius:0 0 8px 8px;
+}
+#contact-container .contact-button {
+    clear: both;
+    display: block;
+    background:#681c51;
+    border:0;
+    margin: 0 auto;
+    padding: 15px 25px;
+    color:#fff;
+    cursor:pointer;
+    font-family: 'HelveticaNeueCyr', Verdana, Arial;;
+    font-size:18px;
+    text-align:center;
+    vertical-align:middle;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    /*---*/
+    position: absolute;
+    bottom: 5px;
+    left: 25px;
+}
+#contact-container .contact-button:hover {
+    background:#842b69;
+}
+#contact-container a.modal-close, #contact-container a.modal-close:link, #contact-container a.modal-close:active, #contact-container a.modal-close:visited {
+    background: url('../images/close.png');
+    position:absolute;
+    width: 24px;
+    height: 24px;
+    top: 8px;
+    right: 9px;
+    text-decoration:none;
+}
+#contact-container a.modal-close:hover {
+    color:#aaa;
+}
