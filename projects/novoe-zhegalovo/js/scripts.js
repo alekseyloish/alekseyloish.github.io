@@ -355,7 +355,7 @@ $(document).ready(function(){
             }
         });
         
-        /*// click on a current selection stage
+        // click on a current selection stage
         $(selectionStage).on('click', function(e) {
             e.preventDefault();
             var $this = $(this);
@@ -368,7 +368,7 @@ $(document).ready(function(){
                 $this.next().fadeIn();
                 $this.next().addClass('opened');
             }
-        });*/
+        });
     });
     
     $(function() {
@@ -379,16 +379,6 @@ $(document).ready(function(){
             stroke: false
         });
         
-        /*$('.house-sector').mouseenter(function() {
-            var data = $('.house-sector').data('maphilight');
-            data.alwaysOn = !data.alwaysOn;
-            $('.house-sector').data('maphilight', data).trigger('alwaysOn.maphilight');
-        }).mouseleave(function() {
-            var data = $('.house-sector').data('maphilight');
-            data.alwaysOn = !data.alwaysOn;
-            $('.house-sector').data('maphilight', data).trigger('alwaysOn.maphilight');
-        });
-        */
     });
     
 
