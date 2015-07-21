@@ -78,12 +78,17 @@
                             <span>Сб-Вс:</span> с 10:00 до 18:00
                         </p>
                     </div> <!-- end work-time -->
+                    
+                    <div class="special-offer-holder">
+                        <a href="#" class="special-offer button">Получить специальное предложение</a>
+                    </div>
                 </div>
             </div> <!-- end header-content -->
             
             <div class="page-nav">
                 <div class="center-wrapper">
                     <ul class="page-nav__items">
+                        <li class="icon-home"><a href="#header"><span style="background-image: url(images/icon-home-min.png);"></span></a></li>
                         <li><a href="#about-complex">О комплексе</a></li>
                         <li><a href="#selection-apartments">Поиск квартиры</a></li>
                         <li><a href="#mortgage">Ипотека</a></li>
@@ -408,13 +413,17 @@
                             <div class="selection-map-wrap">
                                 <img src="images/img-house-in-complex-1.jpg" alt="" usemap="#map-sector" class="image-map-area" />
                                 <map name="map-sector" id="map-sector">
+                                    
+                                    
                                     <area class="house-sector" alt="" title="" href="#" shape="poly" coords="138,139,224,118,215,447,124,449" />
                                     <area class="house-sector" alt="" title="" href="#" shape="poly" coords="226,118,326,91,321,444,218,446" />
                                     <area class="house-sector" alt="" title="" href="#" shape="poly" coords="329,90,380,79,443,76,498,80,554,90,593,101,605,446,501,446,374,446,324,446" />
                                     <area class="house-sector" alt="" title="" href="#" shape="poly" coords="594,99,666,133,680,448,608,447" />
                                     <area class="house-sector" alt="" title="" href="#" shape="poly" coords="681,446,740,448,727,160,669,135" />
+                                    
+                                    
                                 </map>
-                            </div> <!-- end selection-map-wrap -->
+                            </div>
                             
                             <h2 class="selection-stage__hint">Выберите корпус и этаж</h2>
                             <div class="selection-info">
@@ -611,13 +620,37 @@
                     <div class="gallery-wrap parent-slider">
                         <div class="overlay-border  overlay-border--left"></div>
 
-                        <ul class="gallery__list slider" data-single-item="true" data-slide-speed="300">
-                            <li><img src="images/gallery-slider-img-1.jpg" alt=""></li>
-                            <li><img src="images/gallery-slider-img-2.jpg" alt=""></li>
-                            <li><img src="images/gallery-slider-img-1.jpg" alt=""></li>
-                            <li><img src="images/gallery-slider-img-2.jpg" alt=""></li>
-                            <li><img src="images/gallery-slider-img-1.jpg" alt=""></li>
-                            <li><img src="images/gallery-slider-img-2.jpg" alt=""></li>
+                        <ul class="gallery__list slider" data-max-items="1" data-single-item="true" data-slide-speed="300">
+                            <li class="gallery__item">
+                                <div class="gallery__item-wrap">
+                                    <img src="images/gallery-slider-img-1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="gallery__item">
+                                <div class="gallery__item-wrap">
+                                    <img src="images/gallery-slider-img-2.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="gallery__item">
+                                <div class="gallery__item-wrap">
+                                    <img src="images/gallery-slider-img-1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="gallery__item">
+                                <div class="gallery__item-wrap">
+                                    <img src="images/gallery-slider-img-2.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="gallery__item">
+                                <div class="gallery__item-wrap">
+                                    <img src="images/gallery-slider-img-1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="gallery__item">
+                                <div class="gallery__item-wrap">
+                                    <img src="images/gallery-slider-img-2.jpg" alt="">
+                                </div>
+                            </li>
                         </ul> <!-- end gallery__list -->
 
                         <div class="gallery__control slider__control">
@@ -791,20 +824,22 @@
     <!-- Wrapper End -->
     
     <!-- Overlay block -->
-    <div class="overlay"></div>
+    <div class="overlay  overlay--black"></div>
     <!-- Overlay block End -->
     
     <!-- Popup -->
     <div class="popup  popup-order" id="popup-order">
-        <span class="popup__close"><i class="fa fa-times-circle-o"></i>Закрыть</span>
-        <h2 class="popup__heading">Заполните форму заявки на просмотр квартиры:</h2>
-        <form action="" class="popup-form" id="form-popup-order">
-            <input type="text" class="popup-form__input" placeholder="Ваше имя" maxlength="75" required>
-            <input type="tel" class="popup-form__input input-phone" placeholder="Телефон" required>
-            <input type="email" class="popup-form__input" placeholder="Электронная почта" required>
-            <textarea name="user-comment" id="user-comment" class="popup-form__textarea" placeholder="Комментарий"></textarea>
-            <input type="submit" class="popup-form__submit" value="Отправить">
-        </form> <!-- end popup-form -->
+        <div class="popup-order__inner">
+            <span class="popup__close"><i class="fa fa-times-circle-o"></i>Закрыть</span>
+            <h2 class="popup__heading">Заполните форму заявки на просмотр квартиры:</h2>
+            <form action="" class="popup-form" id="form-popup-order">
+                <input type="text" class="popup-form__input" placeholder="Ваше имя" maxlength="75" required>
+                <input type="tel" class="popup-form__input input-phone" placeholder="Телефон" required>
+                <input type="email" class="popup-form__input" placeholder="Электронная почта" required>
+                <textarea name="user-comment" id="user-comment" class="popup-form__textarea" placeholder="Комментарий"></textarea>
+                <input type="submit" class="popup-form__submit" value="Отправить">
+            </form> <!-- end popup-form -->
+        </div>
     </div>
     <!-- Popup End -->
     
@@ -829,6 +864,9 @@
     
     <!-- include device.min.js -->
     <script src="js/device.min.js"></script>
+    
+    <!-- include jQueryFormStyler -->
+    <script src="js/jQueryFormStyler/jquery.formstyler.min.js"></script>
     
     <!-- include MapHilight plugin -->
     <script src="http://zhilkomplex.ru/local/templates/main/js/jquery.maphilight.js"></script>

@@ -20,10 +20,20 @@ $(document).ready(function(){
     });
     
     
+    // Init jQueryFormStyler for customizing select
+    $(function() {
+        setTimeout(function() {
+            $('select').styler({
+                selectVisibleOptions: 7
+            });
+        }, 1)
+    });
+    
+    
     // Init popup windows
     $(function() {
         
-        $('.details-button').on('click', function(e) {
+        $('.details-button, .special-offer').on('click', function(e) {
             e.preventDefault();
             $('.overlay').fadeIn(350);
             $('#popup-order').fadeIn(350);
@@ -34,6 +44,19 @@ $(document).ready(function(){
             $('#popup-order').fadeOut(350);
         });
         
+        
+        // для всплывающего окна "Планировка квартиры"
+        $('.plane-apart-link').on('click', function(e) {
+            e.preventDefault();
+            $('.overlay').fadeIn(350);
+            $('#popup-apart').fadeIn(350);
+        });
+        
+        $('.popup__close, .overlay').on('click', function(e) {
+            $('.overlay').fadeOut(350);
+            $('#popup-apart').fadeOut(350);
+        });
+        
     });
     
     
@@ -42,6 +65,8 @@ $(document).ready(function(){
         $('.slider').each(function() {
                 
             var sliderAPI = $(this).bxSlider({
+                minSlides: 3,
+                maxSlides: 3,
                 moveSlides: 1,
                 adaptiveHeight: true
             });
@@ -379,10 +404,20 @@ $(document).ready(function(){
             stroke: false
         });
         
+        /*$('.house-sector').mouseenter(function() {
+            var data = $('.house-sector').data('maphilight');
+            data.alwaysOn = !data.alwaysOn;
+            $('.house-sector').data('maphilight', data).trigger('alwaysOn.maphilight');
+        }).mouseleave(function() {
+            var data = $('.house-sector').data('maphilight');
+            data.alwaysOn = !data.alwaysOn;
+            $('.house-sector').data('maphilight', data).trigger('alwaysOn.maphilight');
+        });
+        */
     });
-
-
-// 
+    
+    
+    // 
     $(function() {
         var filterParam = $('.filter-param'),
             filterParamRadioBtn = filterParam.find('.filter-button');
