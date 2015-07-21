@@ -1,0 +1,200 @@
+@media only screen and (max-width:1024px) {
+
+    .slogan .slogan-title span {
+        background: none;
+        padding: 0;
+    }
+    .slogan .slogan-title {
+        background: #fff;
+        padding: 12px 20px;
+        text-align: center;
+        line-height: 1.2em;
+        width: 90%;
+        margin: 0 auto 50px;
+    }
+    
+    .advantage-item {
+        margin: 0 9px 20px;
+    }
+    .advantage-video-item {
+        margin: 0 25px 25px;
+    }
+    
+}
+
+@media only screen and (max-width:860px) {
+
+    .mobile-nav {
+        display: inline-block;
+    }
+    
+    .top-nav {
+        display: none;
+    }
+    .top-nav > ul {
+        display: block;
+    }
+    .top-nav > ul > li {
+        display: block;
+        text-align: left;
+        padding-left: 20px;
+        border-bottom: 1px solid #666;
+    }
+    .top-nav > ul > li:first-child {
+        border-top: 1px solid #666;
+    }
+    .top-nav > ul > li:last-child {
+        border: none;
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+
+    .slogan .benefits,
+    .slogan .logo-vertical {
+        display: none;
+    }
+    
+    .main-header .slogan {
+        float: none;
+        width: 100%;
+        background: none;
+        padding-bottom: 0;
+    }
+        .slogan .slogan-title {
+            margin-bottom: 0;
+        }
+    
+    .main-header .contacts {
+        float: none;
+        width: 100%;
+        padding: 50px 0;
+    }
+    
+    section.text-section {
+        text-align: center;
+    }
+    
+    section.text-section.mount-floor {
+        padding-bottom: 0;
+    }
+    .mount-floor-content {
+        min-height: initial;
+        background: none;
+        padding: 0;
+    }
+    .mount-floor-content > img {
+        width: 85%;
+        height: auto;
+    }
+    
+    .reviews-item {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .reviews-author .author-photo,
+    .reviews-author .author-data {
+        display: block;
+        margin: 0 auto;
+    }
+    .reviews-author .author-photo {
+        margin-bottom: 20px;
+    }
+    .reviews-author .author-data {
+        padding: 0;
+    }
+    .reviews-item.border {
+        border: none;
+    }
+    
+    .advantage-video-item {
+        width: 360px;
+        height: 240px;
+    }
+    
+    .main-footer {
+        text-align: center;
+    }
+    
+    .left-col,
+    .right-col {
+        float: none;
+        width: 100%;
+    }
+    .left-col {
+        margin-bottom: 25px;
+    }
+    
+    h2.section-title {
+        font-size: 34px;
+        line-height: 1.4em;
+        letter-spacing: normal;
+    }
+    .our-advantage h2 span {
+        padding: 0;
+        margin-left: 0;
+    }
+    
+    /* ====================
+            PopUp Zvonok
+       ==================== */
+    .popup-zvonok {
+        top: 35px;
+        padding: 20px;
+        width: 95%;
+        margin-left: -47.5%;
+    }
+    .popup-zvonok .title {
+        font-size: 26px;
+        line-height: 1.4em;
+        letter-spacing: normal;
+    }
+    .form-order .input-field {
+        height: 35px;
+        padding-left: 15px;
+    }
+    .form-order .input-group {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    
+    .main-header .slogan {
+        padding-top: 35px;
+    }
+    .main-header .contacts {
+        padding: 35px 0;
+    }
+    
+    .slogan .slogan-title {
+        font-size: 24px;
+    }
+    
+    .text-section p {
+        line-height: 1.4;
+    }
+    
+    .advantage-video-item {
+        display: none;
+    }
+    
+    .product-item {
+        width: 85%;
+        min-width: 250px;
+        margin: 0 auto 30px;
+    }
+    
+    .reviews-item {
+        padding: 20px 0;
+    }
+    
+    .main-footer .contacts .phones {
+        padding-right: 0;
+        padding-bottom: 25px;
+    }
+    
+}

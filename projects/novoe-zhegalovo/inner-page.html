@@ -78,28 +78,262 @@
                             <span>Сб-Вс:</span> с 10:00 до 18:00
                         </p>
                     </div> <!-- end work-time -->
+                    
+                    <div class="special-offer-holder">
+                        <a href="#" class="special-offer button">Получить специальное предложение</a>
+                    </div>
                 </div>
             </div> <!-- end header-content -->
             
             <div class="page-nav">
                 <div class="center-wrapper">
-                    <ul class="page-nav__items">
-                        <li><a href="#about-complex">О комплексе</a></li>
-                        <li><a href="#selection-apartments">Поиск квартиры</a></li>
-                        <li><a href="#mortgage">Ипотека</a></li>
-                        <li><a href="#installments">Рассрочка</a></li>
-                        <li><a href="#gallery">Галерея</a></li>
-                        <li><a href="#reviews">Отзывы</a></li>
-                        <li><a href="#order-view">Записаться на просмотр</a></li>
+                    <ul class="page-nav__items  page-nav__items--center">
+                        <li class="icon-home"><a href="#header"><span style="background-image: url(images/icon-home-min.png);"></span></a></li>
                     </ul> <!-- page-nav__items -->
                 </div>
             </div> <!-- end page-nav -->
+            
         </header>
         <!-- Main Header End -->
         
         <!-- Main Content -->
         <div class="main-content">
-            
+            <div class="center-wrapper">
+                <h1 class="page-title">Выберите вашу квартиру</h1>
+                
+                <!-- Filter Apartments -->
+                <div class="filter-apart">
+                    <ul class="filter-apart__list clearfix">
+                        <li class="filter-apart__item">
+                            <span class="filter-apart__title">Номер дома:</span>
+                            <div class="filter-param" id="house-num">
+                                <button class="filter-button">41</button>
+                                <button class="filter-button">42</button>
+                                <button class="filter-button">44</button>
+                                <button class="filter-button">54</button>
+                            </div> <!-- end filter-param -->
+                        </li> <!-- end filter-apart__item -->
+
+
+                        <li class="filter-apart__item">
+                            <span class="filter-apart__title">Этаж:</span>
+                            <div class="filter-param">
+
+                                <select name="floor-from" id="floor-from" class="filter-param__select" data-placeholder="от">
+                                    <option value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                </select>
+
+                                <select name="floor-to" id="floor-to" class="filter-param__select" data-placeholder="до">
+                                    <option value=""></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                </select>
+
+                                <!-- <div href="#" class="filter-select-box">
+                                    <a href="#" class="filter-select-box__button" id="floor-from">
+                                        <span class="filter-select-box__select">от</span>
+                                        <span class="filter-select-box__trigger"></span>
+                                    </a>
+                                    <ul class="filter-select-box__dropdown">
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                    </ul> end filter-select-box__dropdown 
+                                </div> -->
+
+                            </div> <!-- end filter-param -->
+                        </li> <!-- end filter-apart__item -->
+
+
+                        <li class="filter-apart__item">
+                            <span class="filter-apart__title">Количество комнат:</span>
+                            <div class="filter-param" id="amount-floor">
+                                <button class="filter-button">1</button>
+                                <button class="filter-button">2</button>
+                                <button class="filter-button">3</button>
+                                <button class="filter-button">4</button>
+                            </div> <!-- end filter-param -->
+                        </li> <!-- end filter-apart__item -->
+
+
+                        <li class="filter-apart__item">
+                            <span class="filter-apart__title">Двухуровневые:</span>
+                            <div class="filter-param">
+                                <label class="filter-param__checkbox">
+                                    <input type="checkbox" >
+                                    <span class="filter-param__checkbox-view">
+                                        <i class="fa fa-check"></i>
+                                    </span>
+                                </label>
+                            </div> <!-- end filter-param -->
+                        </li> <!-- end filter-apart__item -->
+
+
+                        <li class="filter-apart__item  filter-apart__item--price">
+                            <span class="filter-apart__title">Цена:</span>
+                            <div class="filter-param">
+
+                                <select name="price-from" id="price-from" class="filter-param__select  filter-param__select--price" data-placeholder="от">
+                                    <option value=""></option>
+                                    <option value="1">от 1 000 000 р.</option>
+                                    <option value="2">от 5 000 000 р.</option>
+                                    <option value="3">от 10 000 000 р.</option>
+                                </select>
+
+                                <select name="price-to" id="price-to" class="filter-param__select  filter-param__select--price" data-placeholder="до">
+                                    <option value=""></option>
+                                    <option value="1">до 1 000 000 р.</option>
+                                    <option value="2">до 5 000 000 р.</option>
+                                    <option value="3">до 10 000 000 р.</option>
+                                </select>
+
+                            </div> <!-- end filter-param -->
+                        </li> <!-- end filter-apart__item -->
+                    </ul> <!-- end filter-apart__list -->
+
+                    <div class="filter-apart__buttons">
+                        <button class="filter-apart__button-apply">Применить фильтр</button>
+                        <button class="filter-apart__button-reset"><i class="fa fa-times-circle-o"></i>Сбросить</button>
+                    </div>
+                </div>
+                <!-- Filter Apartments End -->
+                
+                <!-- Apartments List -->
+                <div class="apartments-list">
+                    <h2 class="apartments-list__heading">Квартиры в ЖК "Новое Жегалово"</h2>
+                    
+                    <table class="apartments-list__table">
+                        <tr class="apartments-list__table-head">
+                            <th class="th-house">Дом</th>
+                            <th class="th-section">Секция</th>
+                            <th class="th-flor">Этаж</th>
+                            <th class="th-amount">Количество комнат</th>
+                            <th class="th-square">Площадь</th>
+                            <th class="th-plane">Планировка</th>
+                            <th class="th-price">Стоимость</th>
+                        </tr>
+                        
+                        <tr class="apartments-list__table-row">
+                            <td>41</td>
+                            <td>A</td>
+                            <td>17</td>
+                            <td>4</td>
+                            <td>76 кв.м.</td>
+                            <td>
+                                <a href="#" class="plane-apart-link"><img src="images/icon-plane-apart.png" alt=""></a>
+                            </td>
+                            <td>
+                                <span class="price-apart text-green">8 750 000 р.</span>
+                            </td>
+                        </tr>
+                        
+                        <tr class="apartments-list__table-row">
+                            <td>41</td>
+                            <td>A</td>
+                            <td>17</td>
+                            <td>4</td>
+                            <td>76 кв.м.</td>
+                            <td>
+                                <a href="#" class="plane-apart-link"><img src="images/icon-plane-apart.png" alt=""></a>
+                            </td>
+                            <td>
+                                <a href="#" class="check-price text-green">Уточнить у менеджера</a>
+                            </td>
+                        </tr>
+                        
+                        <tr class="apartments-list__table-row">
+                            <td>41</td>
+                            <td>A</td>
+                            <td>17</td>
+                            <td>4</td>
+                            <td>76 кв.м.</td>
+                            <td>
+                                <a href="#" class="plane-apart-link"><img src="images/icon-plane-apart.png" alt=""></a>
+                            </td>
+                            <td>
+                                <span class="price-apart text-green">8 750 000 р.</span>
+                            </td>
+                        </tr>
+                        
+                        <tr class="apartments-list__table-row">
+                            <td>41</td>
+                            <td>A</td>
+                            <td>17</td>
+                            <td>4</td>
+                            <td>76 кв.м.</td>
+                            <td>
+                                <a href="#" class="plane-apart-link"><img src="images/icon-plane-apart.png" alt=""></a>
+                            </td>
+                            <td>
+                                <a href="#" class="check-price text-green">Уточнить у менеджера</a>
+                            </td>
+                        </tr>
+                        
+                        <tr class="apartments-list__table-row">
+                            <td>41</td>
+                            <td>A</td>
+                            <td>17</td>
+                            <td>4</td>
+                            <td>76 кв.м.</td>
+                            <td>
+                                <a href="#" class="plane-apart-link"><img src="images/icon-plane-apart.png" alt=""></a>
+                            </td>
+                            <td>
+                                <span class="price-apart text-green">8 750 000 р.</span>
+                            </td>
+                        </tr>
+                        
+                        <tr class="apartments-list__table-row">
+                            <td>41</td>
+                            <td>A</td>
+                            <td>17</td>
+                            <td>4</td>
+                            <td>76 кв.м.</td>
+                            <td>
+                                <a href="#" class="plane-apart-link"><img src="images/icon-plane-apart.png" alt=""></a>
+                            </td>
+                            <td>
+                                <span class="price-apart text-green">8 750 000 р.</span>
+                            </td>
+                        </tr>
+                    </table> <!-- end apartments-list__table -->
+                </div>
+                <!-- Apartments List End -->
+                
+            </div>
         </div>
         <!-- Main Content End -->
         
@@ -143,7 +377,7 @@
     <div class="overlay"></div>
     <!-- Overlay block End -->
     
-    <!-- Popup -->
+    <!-- Popup Order -->
     <div class="popup  popup-order" id="popup-order">
         <span class="popup__close"><i class="fa fa-times-circle-o"></i>Закрыть</span>
         <h2 class="popup__heading">Заполните форму заявки на просмотр квартиры:</h2>
@@ -155,7 +389,82 @@
             <input type="submit" class="popup-form__submit" value="Отправить">
         </form> <!-- end popup-form -->
     </div>
-    <!-- Popup End -->
+    <!-- Popup Order End -->
+    
+    
+    
+    
+    <!-- Popup Plane Apartment -->
+    <div class="popup  popup-apart" id="popup-apart">
+        <span class="popup__close"><i class="fa fa-times-circle-o"></i>Закрыть</span>
+        
+        <!-- Plane Apartment -->
+        <div class="plane-apart">
+            <div class="plane-apart__heading">
+                <ul class="plane-apart__list">
+                    <li>
+                        <span>Корпус:</span>
+                        <span class="value">41</span>
+                    </li>
+                    <li>
+                        <span>Этаж:</span>
+                        <span class="value">12</span>
+                    </li>
+                    <li>
+                        <span>Секция:</span>
+                        <span class="value">A</span>
+                    </li>
+                </ul> <!-- end plane-apart__list -->
+            </div>
+
+            <div class="plane-apart__info">
+                <table class="plane-apart__summary">
+                    <tr class="table-heading">
+                        <td>Общая площадь:</td>
+                        <td>40,8 м<sup>2</sup></td>
+                    </tr>
+                    <tr class="table-heading">
+                        <td>Площадь комнаты:</td>
+                        <td>16,9 м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Жилая площадь:</td>
+                        <td>16,9 м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Кухня:</td>
+                        <td>14,3 м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Санузел:</td>
+                        <td>3,7 м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Прихожая:</td>
+                        <td>3,4 м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>Лоджия:</td>
+                        <td>5,0 м<sup>2</sup></td>
+                    </tr>
+                </table> <!-- end plane-apart__summary -->
+                <div class="plane-apart__price">
+                    <p>Стоимость:</p>
+                    <span class="value">7 980 000 руб.</span>
+                </div>
+                <a href="#" class="plane-apart__order button button--orange">Записаться на просмотр</a>
+            </div> <!-- end plane-apart__info -->
+
+            <div class="plane-apart__image-wrap">
+                <img src="images/img-result--1.jpg" alt="">
+            </div>
+        </div>
+        <!-- Plane Apartment End -->
+        
+    </div>
+    <!-- Popup Plane Apartment End -->
+    
+    
     
     
     <!-- Scripts -->
@@ -178,6 +487,12 @@
     
     <!-- include device.min.js -->
     <script src="js/device.min.js"></script>
+    
+    <!-- include jQueryFormStyler -->
+    <script src="js/jQueryFormStyler/jquery.formstyler.min.js"></script>
+    
+    <!-- include MapHilight plugin -->
+    <script src="http://zhilkomplex.ru/local/templates/main/js/jquery.maphilight.js"></script>
     
     <!-- Dev Scripts -->
     <script src="js/scripts.js"></script>

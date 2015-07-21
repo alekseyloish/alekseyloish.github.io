@@ -1,0 +1,104 @@
+figure, figcaption {
+	display: block;
+}
+
+.transition {
+    -webkit-transition: top 400ms linear;
+    -moz-transition: top 400ms linear;
+    -ms-transition: top 400ms linear;
+    -o-transition: top 400ms linear;
+    transition: top 400ms linear;
+}
+
+.timeTo {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 28px;
+	line-height: 108%;
+	height: 32px;
+}
+
+.timeTo span {
+	display: none;
+}
+
+.timeTo figure {
+	display: inline-block;
+    max-width: 60px;
+    text-align: center;
+	margin: 0;
+	padding: 0;
+    margin-right: 10px;
+}
+.timeTo figure:first-of-type {
+    width: 60px !important;
+}
+    .timeTo figure:first-of-type div {
+        margin: 0 !important;
+    }
+    .timeTo figure:first-of-type figcaption {
+        padding: 0 !important;
+    }
+
+.timeTo figure:last-of-type {
+    margin-right: 0;
+}
+
+.timeTo figcaption {
+	text-align: center !;
+	/*font-size: 12px;*/
+	line-height: 80%;
+    font-family: 'Roboto Condensed', sans-serif;
+	font-weight: normal;
+	color: #fff;
+    margin-top: 5px;
+}
+
+.timeTo div {
+	position: relative;
+	display: inline-block;
+    font-family: 'RobotoCondensedBold', sans-serif;
+    color: #585858;
+    width: 28px !important;
+    height: 65px !important;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 2px 0px rgba(3, 49, 75, 0.75);
+    box-shadow: 0 2px 0px rgba(3, 49, 75, 0.75);
+    
+    background: #fefefe;
+    background: -webkit-linear-gradient(top, #fff 0%, #ccc 100%);
+    background: -moz-linear-gradient(top, #fff 0%, #ccc 100%);
+    background: -ms-linear-gradient(top, #fff 0%, #ccc 100%);
+    background: -o-linear-gradient(top, #fff 0%, #ccc 100%);
+    background: linear-gradient(top, #fff 0%, #ccc 100%);
+	overflow: hidden;
+}
+.timeTo div:first-of-type {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+    .timeTo div:first-of-type ul {
+        left: 0 !important;
+        right: -3px !important;
+    }
+.timeTo div:last-of-type {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+    .timeTo div:last-of-type ul {
+        left: 1px !important;
+    }
+
+.timeTo ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0 !important;
+}
+
+.timeTo ul li {
+    margin: 0;
+    padding: 0;
+    height: 53px !important;
+    list-style: none;
+}

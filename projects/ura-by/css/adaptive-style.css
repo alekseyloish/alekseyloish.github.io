@@ -1,0 +1,383 @@
+@media only screen and (max-width:768px) {
+    
+    /* Шапка сайта */
+    .second-nav,
+    .benefits,
+    .payments,
+    .logo-box .slogan,
+    .contacts .shot-tel,
+    .choice-currency .btn-compare,
+    .purchases-info .item-sum,
+    .slider-wrapper,
+    .details-items .item-buttons,
+    .sort-list-show-box .show-type {
+        display: none;
+    }
+    
+    .logo-box {
+        float: none;
+        margin: 15px auto;
+    }
+    .search-box {
+        float: none;
+        margin: 30px auto;
+        width: 90%;
+    }
+    .contacts {
+        float: none;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .contacts .show-more {
+        float: none;
+        display: inline-block;
+    }
+    .contacts .shot-tel > span {
+        margin-right: 15px;
+    }
+    .choice-delivery {
+        text-align: center;
+        padding-top: 30px;
+    }
+    /*  конец Шапка сайта  */
+    
+    /*  Навигация по сайту  */
+    .mob-nav-box {
+        display: block;
+    }
+    
+    .main-nav {
+        display: none;
+        background-image: none;
+    }
+    .main-nav > ul,
+    .main-nav > ul > li {
+        display: block;
+    }
+    .main-nav > ul > li > a {
+        border-bottom: 1px solid #186291;
+    }
+    .main-nav > ul > li.active > a,
+    .main-nav > ul > li > a:hover {
+        background-color: inherit;
+        border-bottom: 1px solid #186291;
+        padding-bottom: 10px;
+    }
+    .main-nav > ul > li.active > a {
+        background-color: #FF9500;
+    }
+    .main-nav > ul > li .dropdown-nav {
+        padding-right: 15px;
+    }
+    .main-nav > ul > li:hover > .sub-menu {
+        display: none;
+    }
+    
+    .sub-menu {
+        position: inherit;
+        padding: 0;
+        z-index: 0;
+    }
+        .sub-menu li {
+            display: block;
+            border-bottom: 1px solid #ba754d;
+        }
+        .sub-menu li a:hover {
+            text-decoration: none;
+        }
+    /*  конец Навигация по сайту  */
+    
+    /*  Каталог продукции  */
+    .catalog-list {
+        text-align: center;
+    }
+    .catalog-item {
+        float: none;
+        display: inline-block;
+        margin: 0 10px 20px;
+    }
+    .catalog-item:nth-child(4n) {
+        margin: 0 10px 20px;
+    }
+    .sort-list-show-box {
+        float: none;
+        clear: both;
+        margin: 0 auto 20px;
+    }
+    /*  конец Каталог продукции  */
+    
+    /*  Наши клиенты //на главной  */
+    .client-list { text-align: center; }
+    .client-list > li { 
+        float: none;
+        display: inline-block;
+        margin: 0 5px 5px; 
+    }
+    
+    /*  конец Наши клиенты //на главной  */
+    
+    /*  "Только что доставили, Ваш менеджер, Рассылка"  */
+    .other-info .info-column {
+        float: none;
+        width: 90%;
+        margin: 0 auto 35px;
+        text-align: center;
+    }
+    .other-info .info-column.subscribe {
+        width: 75%;
+    }
+    .other-info .info-column:last-of-type {
+        margin-bottom: 0;
+    }
+    
+        .just-arrived-item {
+            margin: 0 auto;
+        }
+    /*  конец "Только что доставили, Ваш менеджер, Рассылка"  */
+    
+    /*  Блок Последние новости  */
+    .news-item {
+        clear: both;
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
+        padding-right: 0;
+    }
+    .news-item:last-of-type { margin-bottom: 0; }
+    /*  конец Блок Последние новости  */
+    
+    /*  Подвал сайта  */
+    .main-footer {
+        background-image: none;
+        background-color: #0f79b5;
+    }
+    .main-footer .footer-col-4 {
+        float: none;
+        width: 160px;
+        margin: 0 auto 25px;
+        padding: 0;
+        text-align: center;
+        min-height: inherit;
+    }
+    
+    .social-links > li {
+        float: none;
+        margin: 0;
+        display: inline-block;
+    }
+    /*  конец Подвал сайта  */
+    
+    /* Карточка товара */
+    .card-product-gallery {
+        float: none;
+        width: 350px;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+        .card-product-main-img {
+            height: 350px;
+        }
+    .card-product-details {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+    }
+    .details-items .item-price {
+        float: none;
+        width: 75%;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+        .item-price .buy-order {
+            width: 50%;
+            margin: 15px auto;
+        }
+    
+    .card-product-description,
+    .card-product-features {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        margin: 0 auto 30px;
+    }
+    .card-product-content h3 { text-align: center; }
+    .card-product-features > table {
+        width: 75%;
+        margin: 0 auto;
+    }
+    
+    .nextprev-product,
+    .interesting-products {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+    .prod-list .preview-product { float: none; }
+    
+    .card-product-content .content-title { text-align: center; }
+    
+    .guarantees .info-column {
+        min-height: inherit;
+        border: none;
+        padding: 0;
+    }
+    .guarantees ul { list-style: none; padding-left: 0;}
+    
+    .reviews .section-title { text-align: center; font-size: 20px;}
+    .reviews-post > section {
+        float: none;
+        width: 100% !important;
+        min-height: 100px;
+        margin-bottom: 15px;
+        padding-right: 0;
+    }
+    
+    .add-review-form .input-items,
+    .input-items.user-input > input,
+    .input-items.user-input > textarea,
+    .add-review-form .ratings-service {
+        float: none;
+        width: 100%;
+    }
+    .add-review-form .ratings-service { margin-bottom: 30px; }
+    
+    .add-review-form .input-items.send {
+        width: 100%;
+        text-align: center;
+    }
+    .input-items.send .btn-send {
+        display: block;
+        margin: 20px auto;
+    }
+    
+    /* конец Карточка товара */
+    
+    /* Корзина */
+    .products-data,
+    .user-data {
+        float: none;
+        width: 100%;
+    }
+    .products-data {
+        padding: 0;
+    }
+    
+    .payment-sys-item {
+        float: none;
+        width: 75%;
+        margin: 0 auto 7px;
+    }
+    /* конец Корзина */
+    
+    .promo-action-item .promo-products,
+    .promo-action-info {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .promo-products .item.catalog-item { float: none; margin: 0 10px 30px;}
+    .promo-order-btn { margin-bottom: 30px;}
+    
+}
+@media only screen and (max-width:480px) {
+    
+    
+    .user-auth .status,
+    .form-seach .button,
+    .our-advatages,
+    .purchases-info .item-name,
+    .purchases-info .item-sum,
+    .mob-hide,
+    .card-warranty {
+        display: none;
+    }
+    
+    .purchases-info .row-item .name-mob,
+    .purchases-info .footer-row .mob-v { display: block; }
+    
+    .purchases-info th { font-size: 14px; }
+    .purchases-info .footer-row { font-size: 12px; }
+    .purchases-info .item-img {
+        font-size: 16px;
+        width: 150px;
+    }
+    
+    .copyright {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .form-seach .btn-search.button {
+        display: block;
+    }
+    
+    .choice-currency {
+        margin-right: 0;
+    }
+    
+    .user-auth,
+    .basket {
+        float: none !important;
+    }
+    .user-auth {
+        padding: 10px 0;
+    }
+    .choice-currency {
+        clear: both;
+        padding-bottom: 5px;
+    }
+    
+    .choice-delivery > span {
+        padding-left: 0;
+        padding-top: 35px;
+        margin-left: 0;
+    }
+    .choice-delivery > span:before {
+        top: 0;
+        left: 50%;
+        margin-top: 0;
+        margin-left: -20.5px;
+    }
+    
+    .content-title { font-size: 20px; }
+    
+    .other-info .info-column.subscribe {
+        width: 90%;
+    }
+    
+    .client-list > li {
+        width: 75px;
+        height: 75px;
+    }
+    
+    .card-product-gallery { width: 250px; }
+    .card-product-main-img { height: 250px; }
+    
+    .reviews-post .rating-item > span,
+    .reviews-post .rating-item .rating-value,
+    .ratings-service .rating-item > span,
+    .ratings-service .rating-item .rating-input {
+        display: block;
+        width: 100%;
+        margin-bottom: 7px;
+        text-align: center;
+    }
+    
+    .item-price .buy-order {
+        width: 185px;
+        min-width: inherit;
+        height: 45px;
+        font-size: 18px;
+        line-height: 45px;
+        margin: 20px auto 25px;
+    }
+    
+    .input-items.send > * {
+        display: block;
+        margin: 0 auto 3px;
+    }
+    
+}

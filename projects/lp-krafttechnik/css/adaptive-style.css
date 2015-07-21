@@ -1,0 +1,250 @@
+@media only screen and (max-width:768px) {
+    
+    .top-panel-header .logo,
+    .main-footer .logo {
+        float: none;
+        margin: 20px auto;
+        width: 60%;
+    }
+    .top-panel-header .nav-contact, .main-footer .nav-contact {
+        float: none;
+        margin: 0 auto;
+        width: 75%;
+        text-align: center;
+    }
+    
+    .nav-contact .main-navs { text-align: center;}
+    .nav-contact .contacts { padding-top: 10px;}
+    .contacts .phone,
+    .main-footer .contacts .phone {
+        display: block;
+        padding: 0;
+        margin: 20px auto;
+    }
+    .contacts .button-order-red { margin: 0;}
+    .contacts .phone:before { display: none;}
+    
+    .section-title {
+        font-size: 32px;
+        line-height: 1.2em;
+        margin: 0 auto 30px;
+    }
+    .title-brend {
+        width: 300px;
+        height: 43px;
+        margin-bottom: 30px;
+    }
+    
+    .promo-img {
+        float: none;
+        top: 0;
+        left: 0;
+        width: 75%;
+        margin: 0 auto 35px;
+    }
+    
+    .promo-form {
+        float: none;
+        margin: 0 auto 20px;
+    }
+    
+    .our-features {
+        background: #eee;
+    }
+    
+    .features-list .feature-item {
+        display: block;
+        margin: 0 auto 35px;
+    }
+    .features-list .feature-item:last-child {
+        margin-right: auto;
+    }
+    
+    .advantage-list {
+        float: none;
+        width: 75%;
+        padding-left: 0;
+        text-align: center;
+        margin: 10px auto 45px;
+    }
+    .advantage-list .advantage-item {
+        padding-left: 0;
+        padding-top: 75px;
+        margin-bottom: 25px;
+    }
+    .advantage-item .count {
+        left: 50%;
+        margin-left: -30px;
+    }
+    .advantage-video {
+        float: none;
+        width: 75%;
+        padding: 0;
+        margin: 0 auto 30px;
+    }
+    
+    .about-product-item {
+        text-align: center;
+    }
+    .about-product-item .product-img,
+    .about-product-item .product-content {
+        float: none;
+        width: 75%;
+        margin: 0 auto 10px;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .product-content .title:after {
+        border-top-width: 14px;
+        border-left-width: 16px;
+        border-right-width: 16px;
+        bottom: -13px;
+        right: 50%;
+        margin-right: -16px;
+    }
+    .about-product-item .content-list > li {
+        padding-left: 0;
+        padding-top: 25px;
+        font-size: 24px;
+    }
+    .about-product-item .content-list > li:before {
+        top: 5px;
+        left: 50%;
+        margin-left: -6px;
+        
+    }
+    
+    .how-use-item {
+        width: 75%;
+        margin: 0 auto 25px;
+        text-align: center;
+    }
+    
+    .how-use-item .item-img,
+    .how-use-item .item-text {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .how-use-item .item-text {
+        min-height: 305px;
+    }
+    .how-use-item .item-img {
+        width: 75%;
+        margin-bottom: 15px;
+    }
+    
+    .reviews-item,
+    .reviews-item:last-child {
+        margin: 0 15px 25px;
+        width: 275px;
+    }
+    .reviews-item .user-data .user-link {
+        display: none;
+    }
+    
+    .consultation,
+    .how-we-work:after {
+        display: none;
+    }
+    
+    .hot-action-form .title {
+        margin-bottom: 30px;
+    }
+    .hot-action-form .input-field,
+    .hot-action-form .button-order-now {
+        display: block;
+        margin: 0 auto 20px;
+    }
+    
+    .work-steps {
+        float: none;
+        width: 100%;
+    }
+    .work-steps .step {
+        float: none;
+        width: 240px;
+    }
+    .work-steps .step:after { display: none;}
+    
+    .advantage-video .img-link img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .about-product-item .product-img img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .popup.popup-about-us {
+        width: 90%;
+        margin-left: -45%;
+        position: absolute;
+    }
+    
+    .reviews .btn-view-reviews,
+    .reviews .btn-add-review {
+        display: block;
+        margin: 0 auto 15px;
+    }
+    
+    .reviews .btn-add-review {
+        width: 305px;
+        background-size: contain;
+    }
+    
+}
+@media only screen and (max-width:480px) {
+    
+    .top-panel-header .logo,
+    .main-footer .logo {
+        width: 75%;
+    }
+    
+    .main-navs li {
+        display: block;
+        margin: 0 auto 7px;
+        padding: 0;
+    }
+    .main-navs li:after { display: none;}
+    
+    .features-list .feature-item {
+        width: 250px;
+    }
+    
+    .about-product-item .product-img,
+    .about-product-item .product-content,
+    .advantage-video {
+        width: 85%;
+    }
+    
+    .promo-img,
+    .how-use-item { width: 90%;}
+    
+    .section-title,
+    .about-product .section-title {
+        font-size: 28px;
+    }
+    .title-brend {
+        width: 230px;
+        height: 33px;
+        margin-bottom: 20px;
+    }
+    .advantage-item .title { font-size: 22px;}
+    .how-use .section-title { font-size: 38px;}
+    
+    .product-content .title { font-size: 12px;}
+    .about-product-item .content-list > li { font-size: 16px;}
+    
+    .remains-product p,
+    .hot-action-form .title { font-size: 28px;}
+    
+    .hot-action-form .button-order-now {
+        width: 285px;
+        background-position: -3px 0;
+    }
+    
+    
+}

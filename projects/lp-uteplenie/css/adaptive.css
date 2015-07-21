@@ -1,0 +1,197 @@
+@media only screen and (max-width:1180px) {
+    
+    .main-header .slogan {
+        width: 620px;
+        font-size: 70px;
+    }
+    
+}
+@media only screen and (max-width:1024px) {
+    
+    .main-header .slogan {
+        float: none;
+        width: 100%;
+        font-size: 52px;
+        margin: 0 auto 30px;
+        color: rgba(255, 255, 255, 0.85);
+        text-align: center;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .form-box {
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .reviews-list {
+        text-align: center;
+    }
+    .reviews-item {
+        width: 33%;
+        margin: 0 0 15px;
+        padding-right: 20px;
+    }
+    
+    .work-step-item,
+    .work-step-item:first-child,
+    .work-step-item:last-child,
+    .work-step-item:nth-child(3n) {
+        margin: 0 15px 15px;
+    }
+    
+    .main-footer .contacts-holder {
+        float: none;
+        width: 95%;
+        margin: 0 auto 30px;
+        padding: 0;
+        text-align: center;
+    }
+    .main-footer .form-box {
+        float: none;
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (max-width:768px) {
+    
+        
+    .logo,
+    .contacts .phones,
+    .contacts .orders {
+        float: none;
+        margin: 0 auto 30px;
+    }
+    
+    .contacts .phones,
+    .contacts .orders {
+        display: block;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+    .contacts .orders {
+        margin-bottom: 0;
+    }
+    .contacts {
+        float: none;
+        width: 100%;
+    }
+    
+    .heading-page {
+        padding: 40px 15px;
+        font-size: 28px;
+        line-height: 1.2em;
+    }
+    .main-header .slogan {
+        font-size: 48px;
+    }
+    
+    .advantage-item {
+        width: 200px;
+        margin: 0 auto 15px;
+    }
+    
+    .our-service-item {
+        margin-bottom: 45px;
+    }
+    .our-service-item .title {
+        text-align: center;
+    }
+    .service-item-list {
+        display: block;
+        margin-bottom: 30px;
+    }
+    .our-service-item .service-item-img {
+        display: none;
+    }
+    .our-service-item .button-price-holder {
+        text-align: center;
+    }
+    .our-service-item .button-price-holder:before {
+        display: none;
+    }
+    
+    .reviews-item,
+    .reviews-item:last-of-type {
+        display: block;
+        width: 85%;
+        margin: 0 auto 25px;
+        text-align: center;
+        padding-right: 0;
+    }
+    .reviews-item .item-img,
+    .reviews-item .item-desc {
+        padding-right: 0;
+    }
+    
+    .reviews-item .item-desc {
+        border-right: none;
+        border-bottom: 2px solid #000;
+    }
+    
+}
+
+@media only screen and (max-width:480px) {
+    
+    h2.section-title {
+        padding: 0 10px;
+        font-size: 24px;
+    }
+    
+    .main-header .slogan {
+        width: 90%;
+        padding: 0 5px;
+        font-size: 36px;
+    }
+    
+    .form-box {
+        width: 285px;
+        padding: 25px;
+    }
+        .form-order .input-field {
+            height: 40px;
+            margin-bottom: 20px;
+        }
+        .form-order .title {
+            text-align: center;
+        }
+    
+    .heading-page {
+        padding: 30px 15px 20px;
+        font-size: 22px;
+    }
+    
+    .warranty-item {
+        display: block;
+        margin: 0 auto 30px;
+        width: 95%;
+        font-size: 16px;
+        height: 175px;
+    }
+    
+    .main-footer .slogan {
+        font-size: 24px;
+    }
+    .main-footer .contacts .button-order {
+        background: #f26735;
+        border-bottom-color: #e05928;
+    }
+    
+    .close_popup {
+        right: 15px;
+    }
+    
+}
+@media only screen and (max-width:360px) {
+
+    .heading-page {
+        font-size: 18px;
+    }
+    .main-header .slogan {
+        font-size: 28px;
+    }
+    .our-service-item .button-price {
+        width: 90%;
+    }
+
+}

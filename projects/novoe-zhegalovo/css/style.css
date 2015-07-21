@@ -158,6 +158,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 	display: block;
 }
 
+table, caption, tbody, tfoot, thead, tr, th, td {
+    vertical-align: middle;
+}
+
 html,
 body{
 	width: 100%;
@@ -352,7 +356,8 @@ p {
 }
 
 .main-content {
-    min-height: 374px;
+    padding-top: 1px;
+    min-height: 375px;
 }
 
 
@@ -494,6 +499,31 @@ p {
 }
 
 
+.special-offer-holder {
+    float: right;
+    padding-top: 10px;
+}
+.special-offer {
+    border-top: none;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 25px;
+    font-size: 16px;
+    background: #368a2a;
+    background: -moz-linear-gradient(#61c22c, #10711e);
+    background: -webkit-gradient(#61c22c, #10711e);
+    background: linear-gradient(#61c22c, #10711e);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.65);
+}
+.special-offer:hover {
+    background: #368a2a;
+    background: -moz-linear-gradient(#10711e, #61c22c);
+    background: -webkit-gradient(#10711e, #61c22c);
+    background: linear-gradient(#10711e, #61c22c);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.65);
+}
+
+
 .page-nav {
     background: #ffc000;
     padding: 6px 0;
@@ -521,6 +551,7 @@ p {
 }
 .page-nav__items > li {
     display: inline-block;
+    vertical-align: middle;
     color: #fff;
 }
 .page-nav__items > li a {
@@ -543,6 +574,28 @@ p {
     text-shadow: none;
 }
 
+
+.page-nav__items .icon-home a {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.page-nav__items .icon-home span {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-repeat: no-repeat;
+}
+.page-nav__items .icon-home:hover span {
+    background-position: 0 -34px;
+    border-color: transparent;
+}
+.page-nav__items .icon-home a:hover {
+    border-color: transparent;
+}
+
+.page-nav__items--center {
+    text-align: center;
+}
 
 
 
@@ -1646,10 +1699,16 @@ p {
     position: relative;
     width: 100%;
 }
-.gallery__list > li {
+.gallery__item {
     width: 975px !important;
 }
-.gallery__list img {
+
+.gallery__item-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__item img {
     display: block;
     width: 975px;
     height: 500px;
@@ -1996,6 +2055,9 @@ p {
     background: rgba(244, 244, 244, 0.9);
     z-index: 2000;
 }
+.overlay--black {
+    background: rgba(0, 0, 0, 0.65);
+}
 
 .popup {
     display: none;
@@ -2012,9 +2074,25 @@ p {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     z-index: 2100;
 }
+
+
 .popup-order {
-    width: 505px;
-    margin-left: -252.5px;
+    top: 100px;
+    width: 350px;
+    margin-left: -175px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 6px;
+}
+.popup-order__inner {
+    position: relative;
+    background: #368a2a;
+    background-image: url(../images/bg-forms.png);
+    padding: 25px;
+}
+.popup-order__inner .popup__heading {
+    font-size: 26px;
+    color: #fff;
 }
 
 .popup__close {
@@ -2022,8 +2100,10 @@ p {
     display: inline-block;
     font-size: 18px;
     color: #898989;
-    top: 10px;
-    right: 10px;
+    top: -40px;
+    right: -6px;
+    text-transform: uppercase;
+    color: #fff;
     cursor: pointer;
 }
 .popup__close .fa {
@@ -2045,11 +2125,11 @@ p {
 .popup-form__input {
     display: block;
     width: 100%;
-    height: 40px;
+    height: 35px;
     background: #f2f0ee;
     border-radius: 5px;
-    margin-bottom: 25px;
-    font-size: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
     outline: none;
     padding-left: 15px;
     -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.8);
@@ -2059,11 +2139,11 @@ p {
 .popup-form__textarea {
     display: block;
     width: 100%;
-    height: 140px;
+    height: 105px;
     background: #f2f0ee;
     border-radius: 5px;
     margin-bottom: 25px;
-    font-size: 20px;
+    font-size: 14px;
     outline: none;
     padding: 10px 15px;
     -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.8);
@@ -2076,10 +2156,10 @@ p {
     display: inline-block;
 	border-radius: 5px;
     border: 1px solid transparent;
-    width: 210px;
-    height: 55px;
+    width: 160px;
+    height: 45px;
     line-height: 1;
-    font-size: 28px;
+    font-size: 24px;
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0 1px 0 #000;
@@ -2108,8 +2188,469 @@ p {
 
 
 
+/********************************************************
+
+    15 - Filter selection
+
+**********************************************************/
+
+.page-title {
+    margin: 35px 0;
+    font-size: 40px;
+    color: #02a4cb;
+    font-family: 'Exo2Condensed';
+    text-transform: uppercase;
+    line-height: 1em;
+}
+
+.filter-apart {
+    margin-bottom: 35px;
+}
+
+.filter-apart__list {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.filter-apart__item {
+    float: left;
+    margin-bottom: 35px;
+}
+.filter-apart__item--price {
+    float: none;
+    clear: both;
+    margin: 0 !important;
+}
+
+.filter-apart__item:not(:first-child) {
+    margin-left: 75px;
+}
+
+.filter-apart__title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.filter-param {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.filter-button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 3px;
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    padding: 0;
+    border: 2px solid #bababa;
+    background: #ececec;
+    font-size: 16px;
+    color: #9f9f9f;
+    outline: none;
+}
+.filter-button:hover,
+.filter-button--active {
+    background: #368a2a;
+    border-color: #368a2a;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.filter-param__checkbox > input {
+    display: none;
+}
+.filter-param__checkbox-view {
+    display: block;
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    padding: 0;
+    border: 2px solid #bababa;
+    background: #ececec;
+    text-align: center;
+    color: #368a2a;
+    cursor: pointer;
+}
+.filter-param__checkbox-view .fa {
+    visibility: hidden;
+}
+.filter-param__checkbox input[type="checkbox"]:checked + .filter-param__checkbox-view .fa {
+    visibility: visible;
+}
+
+.filter-param__checkbox input[type="checkbox"]:checked + .filter-param__checkbox-view {
+    background: #fff;
+}
 
 
+
+/*  Customize select  */
+.filter-param__select {
+    position: relative;
+}
+.filter-param__select:not(:last-child) {
+    margin-right: 10px;
+}
+
+.jq-selectbox {
+    position: relative;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.jq-selectbox__select {
+	min-width: 90px;
+}
+.jq-selectbox__select {
+    position: relative;
+}
+.jq-selectbox__select-text {
+	display: block;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+    padding-left: 10px;
+    border-radius: 4px;
+    background: #eaeaea;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+    color: #444;
+    padding-left: 10px;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+.filter-apart__item--price .jq-selectbox__select-text {
+    width: 150px;
+}
+.jq-selectbox .placeholder {
+	color: #444;
+    padding-left: 10px;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+.jq-selectbox__trigger {
+	position: absolute;
+	top: -3px;
+	right: 0;
+	width: 40px;
+	height: 31px;
+	border: 1px solid #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    background: #fa0;
+}
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    border-top: 6px solid #fff;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    margin-top: -3px;
+    margin-left: -5px;
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+	
+}
+.jq-selectbox.disabled .jq-selectbox__trigger-arrow {
+	
+}
+.jq-selectbox__dropdown {
+	top: 30px;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border-radius: 4px;
+	background: #eaeaea;
+}
+
+.jq-selectbox ul {
+	margin: 0;
+	padding: 0;
+}
+.jq-selectbox li {
+	min-height: 18px;
+	padding-left: 15px;
+    line-height: 1.4em;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	     -o-user-select: none;
+	white-space: nowrap;
+	color: #444;
+}
+.jq-selectbox li.selected {
+	background-color: #368a2a;
+	color: #fff;
+}
+.jq-selectbox li:hover {
+	background-color: #368a2a;
+	color: #fff;
+}
+.jq-selectbox li.disabled {
+	color: #AAA;
+}
+.jq-selectbox li.disabled:hover {
+	background: none;
+}
+.jq-selectbox li.option {
+	padding-left: 25px;
+}
+
+/*  Customize select end   */
+
+.filter-apart__button-apply {
+    display: inline-block;
+    vertical-align: middle;
+    width: 175px;
+    height: 35px;
+    background: #fff;
+    border: 3px solid #368a2a;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #368a2a;
+    text-align: center;
+    margin-right: 15px;
+    outline: none;
+}
+.filter-apart__button-apply:hover {
+    background: #368a2a;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+.filter-apart__button-apply:active {
+    background: #fff;
+    color: #368a2a;
+    text-shadow: none;
+}
+
+.filter-apart__button-reset {
+    display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    color: #999;
+    text-decoration: underline;
+    outline: none;
+}
+.filter-apart__button-reset .fa {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+
+
+
+
+/********************************************************
+
+    16 - Apartments List
+
+**********************************************************/
+.apartments-list {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.apartments-list__heading {
+    font-family: PTSans-Narrow-Bold;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.apartments-list__table {
+    width: 100%;
+}
+
+.apartments-list__table-head {
+    background: #b3b3b3;
+}
+
+.apartments-list__table .th-house { width: 13%; }
+.apartments-list__table .th-section { width: 10%; }
+.apartments-list__table .th-flor { width: 13%; }
+.apartments-list__table .th-amount { width: 20%; }
+.apartments-list__table .th-square { width: 13%; }
+.apartments-list__table .th-plane { width: 13%; }
+.apartments-list__table .th-price { width: 17%; }
+
+
+.apartments-list__table th {
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    padding: 12px 5px;
+    border: 1px solid #000;
+}
+.apartments-list__table th:first-child,
+.apartments-list__table td:first-child {
+    border-left: none;
+}
+.apartments-list__table th:last-child,
+.apartments-list__table td:last-child {
+    border-right: none;
+}
+
+.apartments-list__table-row:nth-child(odd) {
+    background: #e8e8e8;
+}
+.apartments-list__table-row:nth-child(even) {
+    background: #f6f6f6;
+}
+
+.apartments-list__table td {
+    border: 1px solid #000;
+    padding: 6px 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.apartments-list__table-row .plane-apart-link {
+    display: inline-block;
+}
+.apartments-list__table-row .plane-apart-link img {
+    display: block;
+}
+.apartments-list__table-row .text-green {
+    color: #368a2a;
+}
+.apartments-list__table-row .check-price {
+    display: inline-block;
+    line-height: 1.2em;
+    border-bottom: 1px solid #368a2a;
+}
+
+
+
+
+
+
+
+/********************************************************
+
+    17 - PopUp Plane Apart (Планировка квартиры // всплывающее окно)
+
+**********************************************************/
+
+.popup-apart {
+    width: 805px;
+    margin-left: -402.5px;
+    top: 50px;
+}
+
+.plane-apart { width: 100%; }
+
+.plane-apart__heading {
+    width: 100%;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.plane-apart__list {
+    width: 100%;
+}
+.plane-apart__list li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.plane-apart__list li > span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.plane-apart__list li .value {
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    background: #368a2a;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.plane-apart__info {
+    float: left;
+    width: 285px;
+    padding-right: 85px;
+}
+.plane-apart__summary {
+    width: 100%;
+    border-collapse: separate;
+    border: 1px dotted #ccc;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.plane-apart__summary tr {}
+
+.plane-apart__summary td {
+    padding: 3px 8px;
+    border-right: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+.plane-apart__summary td:last-child {
+    border-right: none;
+}
+.plane-apart__summary tr:last-child td {
+    border-bottom: none;
+}
+.plane-apart__summary .table-heading {
+    background: #368a2a;
+    font-family: PTSans-Narrow-Bold;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
+}
+
+.plane-apart__summary .table-heading:first-child td:first-child {
+    border-top-left-radius: 5px;
+}
+.plane-apart__summary .table-heading:first-child td:last-child {
+    border-top-right-radius: 5px;
+}
+.plane-apart__summary sup {
+    font-size: 10px;
+}
+
+.plane-apart__price {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.plane-apart__price p {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.plane-apart__price .value {
+    font-family: PTSans-Narrow-Bold;
+    font-size: 30px;
+    color: #368a2a;
+}
+
+.plane-apart__order {
+    width: 100%;
+    font-size: 16px;
+}
+
+.plane-apart__image-wrap {
+    position: relative;
+    float: right;
+    width: 410px;
+}
+.plane-apart__image-wrap > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 
 

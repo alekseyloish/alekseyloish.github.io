@@ -380,6 +380,25 @@ $(document).ready(function(){
         });
         
     });
+
+
+// 
+    $(function() {
+        var filterParam = $('.filter-param'),
+            filterParamRadioBtn = filterParam.find('.filter-button');
+        
+        $(filterParamRadioBtn).on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            
+            if ( filterParamRadioBtn.hasClass('filter-button--active') ) {
+                filterParamRadioBtn.removeClass('filter-button--active');
+                $this.addClass('filter-button--active');
+            } else {
+                $this.addClass('filter-button--active');
+            }
+        });
+    });
     
 
 });

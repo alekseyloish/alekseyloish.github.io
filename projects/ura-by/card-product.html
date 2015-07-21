@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Доставка цветов</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/adaptive-style.css" />
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- НАЧАЛО -->
+    <div class="wrapper">
+        
+        <header class="top-panel clearfix">
+            <nav class="user-auth pull-left">
+                <ul>
+                    <li><a href="#">Войти</a></li>
+                    <li><a href="#">Регистрация(-2%)</a></li>
+                    <li class="status"><a href="#">Статус заказа</a></li>
+                </ul>
+            </nav>
+            <div class="basket pull-right">
+                <a href="#">Корзина (0)</a>
+            </div>
+            <div class="choice-currency pull-right">
+                <label for="main-currency">Цены в</label>
+                <select name="main-currency" id="main-currency">
+                    <option value="BYR">BYR</option>
+                    <option selected value="UAH">UAH</option>
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                </select>
+                <a href="#" class="btn-compare"><img src="images/icon-favorites.png" alt="Сравнить" /></a>
+            </div> <!-- end choice-currency -->
+        </header> <!-- end top-panel -->
+        
+        <header class="main-header clearfix">
+            <div class="logo-box">
+                <a href="#" class="logo"><img src="images/logo.png" alt="URA" class="image-cover" /></a>
+                <div class="slogan">Доставка цветов с 2003 г.</div>
+            </div>
+            <nav class="second-nav">
+                <ul>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О компании</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <div class="benefits clearfix">
+                    <img src="images/img-benefits-1.png" class="image-cover" alt="" />
+                    <img src="images/img-benefits-2.png" class="image-cover" alt="" />
+                    <img src="images/img-benefits-3.png" class="image-cover" alt="" />
+                    <img src="images/img-benefits-4.png" class="image-cover" alt="" />
+                </div>
+                <form class="form-seach" name="form-seach" id="form-seach">
+                    <input type="search" name="#" placeholder="Что хотите найти?" maxlength="100" />
+                    <input type="submit" name="#" class="button" value="Найти">
+                    <input type="submit" name="#" class="btn-search button" value="" />
+                </form>
+            </div> <!-- end search-box -->
+            <div class="contacts">
+                <div class="shot-tel">
+                    <span>короткий номер</span>7103
+                </div>
+                <ul class="phones">
+                    <li class="phone phone-mts">+37529-752 31 11</li>
+                    <li class="phone phone-velcom">+37529-686 31 76</li>
+                </ul>
+                <a href="#" class="show-more">Показать еще</a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="choice-delivery">
+                <span>Город доставки <span class="city-delivery">Днепропетровск</span> Бесплатная доставка</span>
+            </div>
+        </header> <!-- end main-header -->
+        <div class="mob-nav-box clearfix">
+            <a href="#" id="touch-menu" class="mobile-navigation"><i class="fa fa-navicon"></i>Меню</a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li class="active"><a href="#">Акция 14.11</a></li>
+                <li><a href="#">Новинки месяца</a></li>
+                <li>
+                    <a href="#" class="dropdown-nav">VIP-букеты</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">51 роза</a></li>
+                        <li><a href="#">101 роза</a></li>
+                        <li><a href="#">VIP-букеты из разных цветов</a></li>
+                        <li><a href="#">Сердца из цветов</a></li>
+                    </ul> <!-- end sub-menu -->
+                </li>
+                <li><a href="#">Все букеты</a></li>
+                <li>
+                    <a href="#" class="dropdown-nav">Подарочные корзины</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Корзинки с фруктами</a></li>
+                        <li><a href="#">Женские корзины</a></li>
+                        <li><a href="#">Мужские корзины</a></li>
+                    </ul> <!-- end sub-menu -->
+                </li>
+                <li>
+                    <a href="#" class="dropdown-nav">Подарки</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Букеты из конфет</a></li>
+                        <li><a href="#">Воздушные шарики</a></li>
+                        <li><a href="#">Живые бабочки</a></li>
+                        <li><a href="#">Игрушки из цветов</a></li>
+                        <li><a href="#">Мягкие игрушки</a></li>
+                        <li><a href="#">Небесные фонарики</a></li>
+                        <li><a href="#">Открытки (ручная работа)</a></li>
+                        <li><a href="#">Парфюмерия</a></li>
+                        <li><a href="#">Развлечение в подарок</a></li>
+                        <li><a href="#">Салюты и фейерверки</a></li>
+                        <li><a href="#">Торты</a></li>
+                        <li><a href="#">Все подарки</a></li>
+                    </ul> <!-- end sub-menu -->
+                </li>
+                <li>
+                    <a href="#" class="dropdown-nav">Цветы</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">Букеты с синими розами</a></li>
+                        <li><a href="#">Корзинки с цветами</a></li>
+                        <li><a href="#">Букеты с розами</a></li>
+                        <li><a href="#">Букеты из разных цветов</a></li>
+                        <li><a href="#">Лилии</a></li>
+                        <li><a href="#">Орхидеи</a></li>
+                        <li><a href="#">Комнатные растения</a></li>
+                        <li><a href="#">Розы поштучно</a></li>
+                        <li><a href="#">Тюльпаны</a></li>
+                    </ul> <!-- end sub-menu -->
+                </li>
+                <li>
+                    <a href="#" class="dropdown-nav">Поводы</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">8 марта</a></li>
+                        <li><a href="#">Зимние подарки</a></li>
+                        <li><a href="#">Свадебные букеты</a></li>
+                    </ul> <!-- end sub-menu -->
+                </li>
+            </ul>
+        </nav> <!-- end main-nav -->
+        <main class="main-content">
+            <ul class="bread-crumbs">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Новинки месяца</a></li>
+            </ul>
+            <div class="clearfix"></div>
+            
+            <div class="card-product-content clearfix">
+                <div class="title-card">
+                    <div class="title">Для тебя</div>
+                    <div class="product-rating">
+                        <span>Рейтинг товара:</span>
+                    </div>
+                </div>
+                <div class="card-product-gallery">
+                    <div class="card-product-main-img">
+                        <a href="#" style="background-image: url(images/img-catalog-product-1.jpg);"></a>
+                    </div>
+                    <div class="card-product-min-images">
+                        <a href="#" style="background-image: url(images/img-catalog-product-1.jpg);"></a>
+                        <a href="#" style="background-image: url(images/img-catalog-product-1.jpg);"></a>
+                        <a href="#" style="background-image: url(images/img-catalog-product-1.jpg);"></a>
+                    </div>
+                </div> <!-- end card-product-gallery -->
+                <div class="card-product-details">
+                    <div class="details-items clearfix">
+                        <div class="item-price">
+                            <div class="price">
+                                Цена: <span>875 грн.</span>
+                            </div>
+                            <div class="auth-price">
+                                <p>Стоимость товара после</p>
+                                <p><a href="#">регистрации</a> - 857.50 грн.</p>
+                                <p><a href="#">Авторизация</a></p>
+                            </div> <!-- end auth-price -->
+                            <span class="buy-order button">Оформить заказ</span>
+                            <div class="info-bouquet">
+                                <span>Тип букета:</span>
+                                <img src="images/question.png" alt="" />
+                                <div>Стандарт</div>
+                            </div>
+                            <div class="info-delivery">
+                                <p>Заказать доставку в: <span id="city_name_kel"> Днепропетровск</span></p>
+                                <p>Сможем доставить: <span id="date_delivery_el"> сегодня.</span></p>
+                                <p></p>
+                                <span id="form_spedd_dely">Нужно быстрее?</span>
+                            </div> <!-- end info-delivery -->
+                        </div> <!-- end item-price -->
+                        <div class="item-buttons">
+                            <button class="card-button compare">Добавить к сравнению</button>
+                            <button class="card-button add-basket">+В корзину</button>
+                            <button class="card-button fast-order">Быстрый заказ</button>
+                        </div> <!-- end item-buttons -->
+                    </div> <!-- end item-details -->
+                    
+                    <div class="card-warranty">
+                        <div class="title">Мы гарантируем:</div>
+                        <ul class="warranty-items clearfix">
+                            <li>
+                                <img src="images/garant11.png" alt="" />
+                                <div>Только безопасные платежи - компания Ura.by</div>
+                            </li>
+                            <li>
+                                <img src="images/garant21.png" alt="" />
+                                <div>Мы сделаем красивый букет - старший флорист</div>
+                            </li>
+                            <li>
+                                <img src="images/garant31.png" alt="" />
+                                <div>Мы доставим цветы - вовремя - начальник отдела доставок.</div>
+                            </li>
+                        </ul> <!-- end warranty-items -->
+                    </div> <!-- end card-warranty -->
+                </div> <!-- end card-product-details -->
+                <div class="clearfix"></div>
+                <div class="card-product-description">
+                    <h3>Для тебя - описание</h3>
+                    <p>
+                        Этот букет обязательно станет незабываемым подарком для молодой девушки.
+                    </p>
+                </div> <!-- end card-product-description -->
+                <div class="card-product-features">
+                    <h3>Для тебя - Характ.</h3>
+                    <table>
+                        <tr>
+                            <th>Цветы в букете</th>
+                            <td>Розы</td>
+                        </tr>
+                        <tr>
+                            <th>Подходит к поводам</th>
+                            <td>Розы</td>
+                        </tr>
+                        <tr>
+                            <th>Количество</th>
+                            <td>Розы</td>
+                        </tr>
+                        <tr>
+                            <th>Состав</th>
+                            <td>Розы</td>
+                        </tr>
+                        <tr>
+                            <th>Цвет букета</th>
+                            <td><img src="#" alt="" /></td>
+                        </tr>
+                    </table>
+                </div> <!-- end card-product-features -->
+                <div class="clearfix"></div>
+                <div class="nextprev-product">
+                    <div class="preview-product prev">
+                        <div class="title">Предыдущий товар:</div>
+                        <a href="#" class="preview-product-img">
+                            <span style="background-image: url(images/img-catalog-product-1.jpg);"></span>
+                            ‹ Леди
+                        </a>
+                        <span class="preview-product-btn button">+Заказать</span>
+                    </div> <!-- end preview-product -->
+                    <div class="preview-product next">
+                        <div class="title">Следующий товар:</div>
+                        <a href="#" class="preview-product-img">
+                            <span style="background-image: url(images/img-catalog-product-3.jpg);"></span>
+                            Кармен ›
+                        </a>
+                        <span class="preview-product-btn button">+Заказать</span>
+                    </div> <!-- end preview-product -->
+                </div> <!-- end next-prev-product -->
+                <div class="interesting-products">
+                    <div class="title">Возможно Вас заинтересуют:</div>
+                    <ul class="prod-list clearfix">
+                        <li class="preview-product">
+                            <a href="#" class="preview-product-img">
+                                <span style="background-image: url(images/img-catalog-product-1.jpg);"></span>
+                                Букет цветов
+                            </a>
+                            <span class="preview-product-btn button">+Добавить</span>
+                        </li>
+                        <li class="preview-product">
+                            <a href="#" class="preview-product-img">
+                                <span style="background-image: url(images/img-catalog-product-2.jpg);"></span>
+                                Букет цветов
+                            </a>
+                            <span class="preview-product-btn button">+Добавить</span>
+                        </li>
+                        <li class="preview-product">
+                            <a href="#" class="preview-product-img">
+                                <span style="background-image: url(images/img-catalog-product-3.jpg);"></span>
+                                Букет цветов
+                            </a>
+                            <span class="preview-product-btn button">+Добавить</span>
+                        </li>
+                        <li class="preview-product">
+                            <a href="#" class="preview-product-img">
+                                <span style="background-image: url(images/img-catalog-product-4.jpg);"></span>
+                                Букет цветов
+                            </a>
+                            <span class="preview-product-btn button">+Добавить</span>
+                        </li>
+                    </ul> <!-- end prod-list -->
+                </div> <!-- end interesting-products -->
+                <div class="clearfix"></div>
+                
+                <div class="most-popular">
+                    <div class="content-title">Самые популярные</div>
+                    <div class="catalog-list clearfix">
+                        <div class="catalog-item">
+                            <a href="#" class="catalog-item-img">
+                                <img src="images/img-catalog-product-1.jpg" class="image-cover" alt="" />
+                            </a>
+                            <a href="#" class="catalog-item-title">Для тебя</a>
+                            <div class="catalog-item-data">
+                                <div class="data-row">
+                                    <span class="name">Код:</span>
+                                    <span class="product-article"></span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="name">Цена:</span>
+                                    <span class="product-price">875 <span>грн</span></span>
+                                </div>
+                            </div> <!-- end catalog-item-data -->
+                            <div class="catalog-item-btn button">+Заказать</div>
+                        </div> <!-- end catalog-item -->
+
+                        <div class="catalog-item">
+                            <a href="#" class="catalog-item-img">
+                                <img src="images/img-catalog-product-2.jpg" class="image-cover" alt="" />
+                            </a>
+                            <a href="#" class="catalog-item-title">Для тебя</a>
+                            <div class="catalog-item-data">
+                                <div class="data-row">
+                                    <span class="name">Код:</span>
+                                    <span class="product-article"></span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="name">Цена:</span>
+                                    <span class="product-price">875 <span>грн</span></span>
+                                </div>
+                            </div> <!-- end catalog-item-data -->
+                            <div class="catalog-item-btn button">+Заказать</div>
+                        </div> <!-- end catalog-item -->
+
+                        <div class="catalog-item">
+                            <a href="#" class="catalog-item-img">
+                                <img src="images/img-catalog-product-3.jpg" class="image-cover" alt="" />
+                            </a>
+                            <a href="#" class="catalog-item-title">Для тебя</a>
+                            <div class="catalog-item-data">
+                                <div class="data-row">
+                                    <span class="name">Код:</span>
+                                    <span class="product-article"></span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="name">Цена:</span>
+                                    <span class="product-price">875 <span>грн</span></span>
+                                </div>
+                            </div> <!-- end catalog-item-data -->
+                            <div class="catalog-item-btn button">+Заказать</div>
+                        </div> <!-- end catalog-item -->
+
+                        <div class="catalog-item">
+                            <a href="#" class="catalog-item-img">
+                                <img src="images/img-catalog-product-4.jpg" class="image-cover" alt="" />
+                            </a>
+                            <a href="#" class="catalog-item-title">Для тебя</a>
+                            <div class="catalog-item-data">
+                                <div class="data-row">
+                                    <span class="name">Код:</span>
+                                    <span class="product-article"></span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="name">Цена:</span>
+                                    <span class="product-price">875 <span>грн</span></span>
+                                </div>
+                            </div> <!-- end catalog-item-data -->
+                            <div class="catalog-item-btn button">+Заказать</div>
+                        </div> <!-- end catalog-item -->
+                    </div> <!-- end catalog-list -->
+                    
+                </div> <!-- end most-popular -->
+                
+                <div class="recently-visited">
+                    <div class="content-title">Недавно просмотренные</div>
+                    <div class="catalog-list clearfix">
+                        <div class="catalog-item">
+                            <a href="#" class="catalog-item-img">
+                                <img src="images/img-catalog-product-3.jpg" class="image-cover" alt="" />
+                            </a>
+                            <a href="#" class="catalog-item-title">Для тебя</a>
+                            <div class="catalog-item-data">
+                                <div class="data-row">
+                                    <span class="name">Код:</span>
+                                    <span class="product-article"></span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="name">Цена:</span>
+                                    <span class="product-price">875 <span>грн</span></span>
+                                </div>
+                            </div> <!-- end catalog-item-data -->
+                            <div class="catalog-item-btn button">+Заказать</div>
+                        </div> <!-- end catalog-item -->
+
+                        <div class="catalog-item">
+                            <a href="#" class="catalog-item-img">
+                                <img src="images/img-catalog-product-4.jpg" class="image-cover" alt="" />
+                            </a>
+                            <a href="#" class="catalog-item-title">Для тебя</a>
+                            <div class="catalog-item-data">
+                                <div class="data-row">
+                                    <span class="name">Код:</span>
+                                    <span class="product-article"></span>
+                                </div>
+                                <div class="data-row">
+                                    <span class="name">Цена:</span>
+                                    <span class="product-price">875 <span>грн</span></span>
+                                </div>
+                            </div> <!-- end catalog-item-data -->
+                            <div class="catalog-item-btn button">+Заказать</div>
+                        </div> <!-- end catalog-item -->
+                    </div> <!-- end catalog-list -->
+                </div> <!-- end recently-visited -->
+            </div> <!-- end card-product-content -->
+            
+            <div class="other-info guarantees clearfix">
+                <div class="info-column our-guarantees">
+                    <div class="section-title">Наши гарантии</div>
+                    <p>Заказав этот букет Вы обязательно подарите радость и улыбку своим близким!</p>
+                    <p>Получателю не понравился букет? - выполним замену в течение 24 часов</p>
+                </div> <!-- end our-guarantees -->
+                <div class="info-column features-buket">
+                    <div class="section-title">Преимущества букета</div>
+                    <ul>
+                        <li>Доставка бесплатно</li>
+                        <li>Этот букет есть в наличии</li>
+                        <li>Просмотрели за неделю: 81</li>
+                        <li>Купили за месяц: 1</li>
+                    </ul>
+                </div> <!-- end features-buket -->
+                <div class="info-column faq">
+                    <div class="section-title">Часто задаваемые вопросы</div>
+                    <ul class="faq-list">
+                        <li><a href="#">Скидки?</a></li>
+                        <li><a href="#">Доставка по Киеву?</a></li>
+                        <li><a href="#">Сколько живут цветы?</a></li>
+                        <li><a href="#">Гарантии?</a></li>
+                        <li><a href="#">Изменить букет?</a></li>
+                        <li><a href="#">Что мешает заказать?</a></li>
+                        <li><a href="#">Как оплатить букет?</a></li>
+                    </ul>
+                </div> <!-- end faq -->
+            </div> <!-- end other-info guarantees -->
+            
+            <div class="reviews">
+                <div class="section-title">Отзывы</div>
+                <div class="reviews-post clearfix">
+                    <section class="comment">
+                        <p><span>Алексей</span>, наш клиент прокомментировал:</p>
+                        <div class="comment-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores quam, dolor ducimus quis molestiae!
+                        </div>
+                    </section> <!-- end comment -->
+                    
+                    <section class="rating">
+                        <h4>Оценка работы клиентом:</h4>
+                        <div class="rating-item">
+                            <span>Работа менеджера:</span>
+                            <div class="rating-value">5</div>
+                        </div> <!-- end rating-item -->
+                        <div class="rating-item">
+                            <span>Работа флорист:</span>
+                            <div class="rating-value">5</div>
+                        </div> <!-- end rating-item -->
+                        <div class="rating-item">
+                            <span>Рейтинг сайт:</span>
+                            <div class="rating-value">5</div>
+                        </div> <!-- end rating-item -->
+                        <div class="rating-item">
+                            <span>Работа службы доставки:</span>
+                            <div class="rating-value">5</div>
+                        </div> <!-- end rating-item -->
+                        <div class="rating-item">
+                            <span>Свежесть цветов:</span>
+                            <div class="rating-value">5</div>
+                        </div> <!-- end rating-item -->
+                    </section> <!-- end rating -->
+                    
+                    <section class="comment-posted">
+                        <h4>Комментарий оставлен</h4>
+                        <div class="date">11.04.2015 21:32:27</div>
+                    </section>
+                </div> <!-- end reviews-post -->
+                <div class="reviews-post clearfix">
+                    <section class="comment">
+                        <p><span>Юлия</span>, наш клиент прокомментировала:</p>
+                        <div class="comment-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolores quam, dolor ducimus quis molestiae!
+                        </div>
+                    </section> <!-- end comment -->
+                    
+                    <section class="rating">
+                        <h4>Оценка работы клиентом:</h4>
+                        <div class="rating-item">
+                            <span>Работа менеджера:</span>
+                            <div class="rating-value">5</div>
+                        </div> <!-- end rating-item -->
+                        <div class="rating-item">
+                            <span>Работа флорист:</span>
+                            <div class="rating-value">5</div>
+                        </div> <!-- end rating-item -->
+                        <div class="rating-item">
+                            <span>Рейтинг сайт:</span>
+                            <div class="rating-value">5</div>
+                        </div> <!-- end rating-item -->
+                        <div class="rating-item">
+                            <span>Работа службы доставки:</span>
+                            <div class="rating-value">5</div>
+                        </div> <!-- end rating-item -->
+                        <div class="rating-item">
+                            <span>Свежесть цветов:</span>
+                            <div class="rating-value">5</div>
+                        </div> <!-- end rating-item -->
+                    </section> <!-- end rating -->
+                    
+                    <section class="comment-posted">
+                        <h4>Комментарий оставлен</h4>
+                        <div class="date">11.04.2015 21:32:27</div>
+                    </section>
+                </div> <!-- end reviews-post -->
+            </div> <!-- end reviews -->
+            
+            <div class="reviews-add">
+                <div class="section-title">Оставить комментарий (вопрос)</div>
+                <form action="#" method="post" name="add-review-form" id="add-review-form" class="add-review-form clearfix">
+                    <div class="input-items user-input">
+                        <input type="text" name="user-name" size="50" value="" placeholder="Ваше имя">
+                        <textarea name="user-comment" placeholder="Напишите свой комментарий"></textarea>
+                    </div> <!-- end input-items -->
+                    <div class="ratings-service">
+                        <div class="rating-item">
+                            <span>Оцените работу менеджера:</span>
+                            <div class="rating-input">
+                                <a class="manager-set rating-input-item" data-star="1" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="2" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="3" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="4" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="5" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                            </div> <!-- end rating-input -->
+                        </div> <!-- end rating-item -->
+                        
+                        <div class="rating-item">
+                            <span>Оцените работу флорист:</span>
+                            <div class="rating-input">
+                                <a class="manager-set rating-input-item" data-star="1" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="2" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="3" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="4" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="5" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                            </div> <!-- end rating-input -->
+                        </div> <!-- end rating-item -->
+                        
+                        <div class="rating-item">
+                            <span>Оцените рейтинг сайт:</span>
+                            <div class="rating-input">
+                                <a class="manager-set rating-input-item" data-star="1" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="2" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="3" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="4" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="5" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                            </div> <!-- end rating-input -->
+                        </div> <!-- end rating-item -->
+                        
+                        <div class="rating-item">
+                            <span>Оцените работу службы доставки:</span>
+                            <div class="rating-input">
+                                <a class="manager-set rating-input-item" data-star="1" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="2" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="3" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="4" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="5" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                            </div> <!-- end rating-input -->
+                        </div> <!-- end rating-item -->
+                        
+                        <div class="rating-item">
+                            <span>Оцените свежесть цветов:</span>
+                            <div class="rating-input">
+                                <a class="manager-set rating-input-item" data-star="1" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="2" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="3" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="4" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                                <a class="manager-set rating-input-item" data-star="5" data-type="manager-set" href="javascript:void(0);" onclick="check_rating(this);" onmouseout="del_rating(this);" onmouseover="set_rating(this);"></a>
+                            </div> <!-- end rating-input -->
+                        </div> <!-- end rating-item -->
+                    </div> <!-- end ratings-service -->
+                    <div class="clearfix"></div>
+                    <div class="input-items send">
+                        <img src="images/captcha.jpg" alt="captcha" width="180" height="40" />
+                        <span>=</span>
+                        <input type="text" name="captcha-word" maxlength="50" value="" placeholder="Введите символы с картинки" />
+                        <input type="submit" name="review-submit" class="btn-send button" value="Оставить" />
+                    </div> <!-- end input-items send -->
+                </form> <!-- end add-review-form -->
+            </div> <!-- end reviews-add -->
+            
+        </main> <!-- end main-content -->
+    </div> <!-- end wrapper -->
+    
+    <footer class="main-footer">
+        <div class="footer-wrapper">
+            <div class="footer-col-4 about-company">
+                <div class="title">Наша компания</div>
+                <ul class="footer-links">
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Наша команда</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="#">Логотип</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Поставщикам</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4 info-links">
+                <div class="title">Информация</div>
+                <ul class="footer-links">
+                    <li><a href="#">Статьи</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Цветочным салонам</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4 del-links">
+                <div class="title">Доставка цветов</div>
+                <ul class="footer-links">
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Акции</a></li>
+                </ul>
+            </div>
+            <div class="footer-col-4 social">
+                <div class="title">Присоединяйтесь</div>
+                <ul class="social-links clearfix">
+                    <li><a href="#" class="soc-link icon-f"></a></li>
+                    <li><a href="#" class="soc-link icon-t"></a></li>
+                    <li><a href="#" class="soc-link icon-g"></a></li>
+                    <li><a href="#" class="soc-link icon-v"></a></li>
+                    <li><a href="#" class="soc-link icon-i"></a></li>
+                    <li><a href="#" class="soc-link icon-o"></a></li>
+                </ul> <!-- end social-links -->
+            </div>
+            <div class="copyright">
+                <p>Доставка цветов по Минску и Беларуси</p>
+            </div>
+            <div class="payments">
+                <img src="images/visa.png" alt="" />
+            </div>
+        </div> <!-- end footer-wrapper -->
+    </footer> <!-- end main-footer -->
+    <!-- КОНЕЦ -->
+    
+    <!-- Scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery.carouFredSel-6.2.1.js"></script>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
