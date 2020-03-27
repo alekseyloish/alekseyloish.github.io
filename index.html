@@ -1,362 +1,98 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Сайт-портфолио верстальщика | Алексей Лоиш</title>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Алексей Лоиш - HTML-верстальщик. Услуги верстки макетов страниц сайта" />
-    <meta name="keywords" content="верстка, верстка сайтов, качественная верстка PSD макета, верстка html5 css3, front-end, верстальщик, Алексей Лоиш верстка" />
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-    
-    
-    <link rel="stylesheet" href="css/skel.css" />
-    
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style-desktop.css" />
-    
-    
-    <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-    <!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oleksii Loish | Front-end developer</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/db7392bee2.js" crossorigin="anonymous"></script>
+
+    <style>
+        *,
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            background: #ffffff;
+            color: #262626;
+        }
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        .business-card {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .business-card .name {
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 38px;
+            font-weight: normal;
+            margin: 0;
+        }
+        .business-card .position {
+            font-size: 16px;
+            margin: 40px 0;
+        }
+        .business-card .socials {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .business-card .socials li {
+            margin: 0 7px;
+        }
+        .business-card .socials a {
+            text-decoration: none;
+            color: #262626;
+            font-size: 22px;
+            padding: 4px;
+
+            transition: 0.2s;
+        }
+        .business-card .socials a:hover {
+            opacity: 0.8;
+        }
+
+        .business-card .email {
+            color: inherit;
+            font-size: 14px;
+        }
+    </style>
 
 </head>
 <body>
-    <!--[if lt IE 7]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
-    <!-- Nav -->
-        <nav id="nav">
-            <ul class="container">
-                <li><a href="#top">Главная</a></li>
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-    <!-- Nav end -->
+<div class="business-card">
 
-    <!-- Home -->
-        <div class="wrapper style1 first">
-            <article class="container" id="top">
-                <div class="row">
-                    <div class="4u">
-                        <span class="image fit"><img src="images/my-avatar.jpg" alt="" /></span>
-                    </div>
-                    <div class="8u">
-                        <header>
-                            <h1>Привет. Меня зовут <strong>Алексей Лоиш</strong>.
-                                <br />
-                                <span>Я - HTML-верстальщик</span>
-                            </h1>
-                        </header>
-                        <p>На этом сайте вы сможете изучить мое <strong><a href="docs/cv.pdf">резюме</a></strong> и ознакомиться с <strong>моими работами</strong>.</p>
-                        <a href="#portfolio" class="button big scrolly">Посмотреть мои работы</a>
-                    </div>
-                </div>
-            </article>
-        </div>
-    <!-- Home end -->
+    <h2 class="name">Oleksii Loish</h2>
+    <div class="position">Front-end Developer</div>
+    <ul class="socials">
+        <li><a href="https://www.facebook.com/aleksey.loish" target="_blank" class="link"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/aleksey-loish-7b664589" target="_blank" class="link"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="https://t.me/aleksey_loish" target="_blank" class="link"><i class="fab fa-telegram"></i></a></li>
+    </ul>
 
-    <!-- Portfolio -->
-        <div class="wrapper style3">
-            <article id="portfolio">
-                <header>
-                    <h2>Здесь представлены примеры
-                        <br />
-                        моих выполненых работ
-                    </h2>
-                    <p>Все работы были сделаны полностью вручную с нуля</p>
-                    <p class="last-release">(дата последнего добавления: <strong>21.07.2015</strong> )</p>
-                </header>
-                <div class="container">
-                   
-                    <div class="row">
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/novoe-zhegalovo.html" target="_blank" class="image featured"><img src="images/novoe-zhegalovo--min.jpg" alt="" /></a>
-                                <h3><a href="projects/novoe-zhegalovo.html" target="_blank">Верстка сайта ЖК "Новое Жегалово"</a></h3>
-                                <p>
-                                    Было сделано: Верстка PSD-макетов
-                                    <br>
-                                    <strong>10.07.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/ura-by.html" target="_blank" class="image featured"><img src="images/ura-by--min.jpg" alt="" /></a>
-                                <h3><a href="projects/ura-by.html" target="_blank">Адаптивная верстка интернет-магазина Ura.by</a></h3>
-                                <p>
-                                    Было сделано: Адаптивная верстка PSD-макетов
-                                    <br>
-                                    <strong>20.06.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/yamaha-nn.html" target="_blank" class="image featured"><img src="images/yamaha-nn--min.jpg" alt="" /></a>
-                                <h3><a href="projects/yamaha-nn.html" target="_blank">Верстка интернет-магазина YAMAHA (Нижний Новгород)</a></h3>
-                                <p>
-                                    Было сделано: Верстка PSD-макетов
-                                    <br>
-                                    <strong>15.05.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="row">
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/lp-krafttechnik.html" target="_blank" class="image featured"><img src="images/lp-krafttechnik--min.jpg" alt="" /></a>
-                                <h3><a href="projects/lp-krafttechnik.html" target="_blank">Верстка лендинга Krafttechnik</a></h3>
-                                <p>
-                                    Было сделано: Адаптивная верстка PSD-макета
-                                    <br>
-                                    <strong>04.05.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/alpha-logistic.html" target="_blank" class="image featured"><img src="images/alpha-logistic--min.jpg" alt="" /></a>
-                                <h3><a href="projects/alpha-logistic.html" target="_blank">Верстка сайта Alpha Logistic</a></h3>
-                                <p>
-                                    Было сделано: Адаптивная верстка PSD-макетов
-                                    <br>
-                                    <strong>25.04.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/lp-uteplenie.html" target="_blank" class="image featured"><img src="images/lp-uteplenie--min.jpg" alt="" /></a>
-                                <h3><a href="projects/lp-uteplenie.html" target="_blank">Лендинг "Утепление дома"</a></h3>
-                                <p>
-                                    Было сделано: Верстка PSD-макета
-                                    <br>
-                                    <strong>22.04.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="row">
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/lp-poly.html" target="_blank" class="image featured"><img src="images/lp-poly--min.jpg" alt="" /></a>
-                                <h3><a href="projects/lp-poly.html" target="_blank">Лендинг "Теплые полы"</a></h3>
-                                <p>
-                                    Было сделано: Верстка PSD-макета
-                                    <br>
-                                    <strong>18.04.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/lp-krovlya.html" target="_blank" class="image featured"><img src="images/lp-krovlya--min.jpg" alt="" /></a>
-                                <h3><a href="projects/lp-krovlya.html" target="_blank">Лендинг "Кровельные работы"</a></h3>
-                                <p>
-                                    Было сделано: Верстка PSD-макета
-                                    <br>
-                                    <strong>15.04.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/murman-fish.html" target="_blank" class="image featured"><img src="images/murman-fish--min.jpg" alt="" /></a>
-                                <h3><a href="projects/murman-fish.html" target="_blank">Верстка сайта "Murman Fish"</a></h3>
-                                <p>
-                                    Было сделано: Верстка PSD-макетов
-                                    <br>
-                                    <strong>04.04.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="row">
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/shinamir-com-ua.html" target="_blank" class="image featured"><img src="images/shinamir-com-ua--min.jpg" alt="" /></a>
-                                <h3><a href="projects/shinamir-com-ua.html" target="_blank">Верстка интернет магазина ШинаМир</a></h3>
-                                <p>
-                                    Было сделано: Верстка PSD-макетов
-                                    <br>
-                                    <strong>12.02.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/stroyberi-email.html" target="_blank" class="image featured"><img src="images/stroyberi-email--min.jpg" alt="" /></a>
-                                <h3><a href="projects/stroyberi-email.html" target="_blank">Верстка email рассылки для интернет-магазина</a></h3>
-                                <p>
-                                    Было сделано: Верстка email рассылки
-                                    <br>
-                                    <strong>05.02.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/stroyberi-com-ua.html" target="_blank" class="image featured"><img src="images/stroyberi-com-ua--min.png" alt="" /></a>
-                                <h3><a href="projects/stroyberi-com-ua.html" target="_blank">Адаптивная верстка интернет магазина СтройБери</a></h3>
-                                <p>
-                                    Было сделано: Верстка страниц
-                                    <br>
-                                    <strong>26.12.2014</strong>
-                                </p>
-                            </article>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="row">
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/next-complete-trading.html" target="_blank" class="image featured"><img src="images/next-complete-trading--min.jpg" alt="" /></a>
-                                <h3><a href="projects/next-complete-trading.html" target="_blank">Адаптивная верстка PSD-макета (тестовое задание)</a></h3>
-                                <p>
-                                    Было сделано: Верстка PSD-макета
-                                    <br>
-                                    <strong>23.11.2014</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/scovo-market.html" target="_blank" class="image featured"><img src="images/scovo-market--min.jpg" alt="" /></a>
-                                <h3><a href="projects/scovo-market.html" target="_blank">Верстка интернет-магазина Scovomarket.ru</a></h3>
-                                <p>
-                                    Было сделано: Верстка страниц сайта
-                                    <br>
-                                    <strong>20.11.2014</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/rodbans-technology.html" target="_blank" class="image featured"><img src="images/rodbans-technology--min.jpg" alt="" /></a>
-                                <h3><a href="projects/rodbans-technology.html" target="_blank">Сайт компании "Nova Rodbans Technology"</a></h3>
-                                <p>
-                                    Было сделано: Верстка страниц сайта
-                                    <br>
-                                    <strong>03.11.2014</strong>
-                                </p>
-                            </article>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="row">
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/stroy-complect-service.html" target="_blank" class="image featured"><img src="images/stroy-complect-service--min.jpg" alt="" /></a>
-                                <h3><a href="projects/stroy-complect-service.html" target="_blank">Лендинг "СтройКомплектСервис"</a></h3>
-                                <p>
-                                    Было сделано: Верстка PSD-макета
-                                    <br>
-                                    <strong>23.02.2015</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/new-relax-51.html" target="_blank" class="image featured"><img src="images/new-relax-51--min.jpg" alt="" /></a>
-                                <h3><a href="projects/new-relax-51.html" target="_blank">Сайт студии релаксации New Relax 51</a></h3>
-                                <p>
-                                    Было сделано: Верстка PSD-макета
-                                    <br>
-                                    <strong>09.09.2014</strong>
-                                </p>
-                            </article>
-                        </div>
-                        <div class="4u">
-                            <article class="box style2">
-                                <a href="projects/new-relax.html" target="_blank" class="image featured"><img src="images/new-relax--min.jpg" alt="" /></a>
-                                <h3><a href="projects/new-relax.html" target="_blank">Сайт-визитка салона "NewRelax"</a></h3>
-                                <p>
-                                    Было сделано: Верстка PSD-макета
-                                    <br>
-                                    <strong>29.08.2014</strong>
-                                </p>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-                <footer>
-                    <p>
-                        Если вы заинтересовались и хотите предложить мне работу?
-                        <br />
-                        Тогда...
-                    </p>
-                    <a href="#contact" class="button big scrolly">Свяжитесь со мной</a>
-                </footer>
-            </article>
-        </div>
-    <!-- Portfolio end -->
+    <a href="mailto:aleksey.loish@gmail.com" class="email">aleksey.loish@gmail.com</a>
 
-    <!-- Contact -->
-        <div class="wrapper style4">
-            <article id="contact" class="container small">
-                <header>
-                    <h2>Контакты</h2>
-                    <ul class="contacts">
-                        <li class="e-mail icon fa-envelope-o"><a href="mailto:aleksey.loish@gmail.com" target="_blank">aleksey.loish@gmail.com</a></li>
-                        <li class="phone icon fa-mobile"><span>+38 (066) 605-0268</span></li>
-                        <li class="skype icon fa-skype"><a href="skype:loish_aleksey?chat">loish_aleksey</a></li>
-                    </ul>
-                </header>
-                <div>						
-                    <div class="row">
-                        <div class="12u">
-                            <hr />
-                            <h3>Найти меня в социальных сетях</h3>
-                            <ul class="social">
-                                <li><a href="https://vk.com/loish_aleks" target="_blank" class="icon fa-vk"><span class="label">Вконтаке</span></a></li>
-                                <li><a href="https://www.facebook.com/aleksey.loish" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                                <li><a href="https://www.linkedin.com/in/aleksey-loish-7b664589" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-                                <li><a href="skype:loish_aleksey?chat" class="icon fa-skype"><span class="label">Skype</span></a></li>
-                                <li><a href="https://github.com/alekseyloish" target="_blank" class="icon fa-github"><span class="label">GitHub</span></a></li>
-                            </ul>
-                            <hr />
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-    <!-- Contact end -->
-    
-    
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+</div>
 
-        ga('create', 'UA-54760068-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    
-    <!-- Scripts -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    
-    <script src="js/jquery.scrolly.min.js"></script>
-    <script src="js/skel.min.js"></script>
-    <script src="js/init.js"></script>
-    
-    <!-- Dev Scripts -->
-    <script src="js/scripts.js"></script>
-    
 </body>
 </html>
