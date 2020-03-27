@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oleksii Loish | Front-end developer</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Ubuntu&display=swap" rel="stylesheet">
+    <script src="fslightbox.js"></script>
+
+    <style>
+        *,
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            background: #ffffff;
+            color: #262626;
+        }
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            max-width: 1170px;
+            margin: 50px auto;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .example-list {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .example-item {
+            width: 30%;
+            min-width: 260px;
+            margin-bottom: 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: left;
+        }
+
+        .example-item .title {
+            width: 100%;
+            max-width: 800px;
+            text-align: left;
+            font-weight: bold;
+            margin: 0 auto 30px;
+        }
+
+        .example-item .image-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            margin-bottom: 30px;
+            height: 220px;
+            overflow: hidden;
+            width: 100%;
+
+            background: #fff;
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0, 0.25);
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0, 0.25);
+            box-shadow: 0 1px 3px rgba(0,0,0, 0.25);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+
+        .example-item .image-wrap img {
+            display: block;
+            max-width: 100%;
+            width: auto;
+            height: auto;
+
+            transition: 0.2s ease-in;
+            cursor: pointer;
+        }
+
+        .example-item .image-wrap:hover img {
+            transform: scale(1.1);
+        }
+
+        .example-item .descr {
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="example-list">
+        <div class="example-item">
+            <div class="title">Budget filters</div>
+            <a data-fslightbox="demo-images" href="images/budget-filter-on-product-listing-page.jpg" class="image-wrap">
+                <img src="images/budget-filter-on-product-listing-page.jpg" alt="">
+            </a>
+            <div class="descr">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at commodi deserunt, dicta dolore
+                enim iusto molestias quam quasi quo? Ab assumenda blanditiis eos ipsam labore officia praesentium quasi velit!
+            </div>
+        </div>
+
+        <div class="example-item">
+            <div class="title">Dropdown menu</div>
+            <a data-fslightbox="demo-images" href="images/desktop-dropdown-menu.jpg" class="image-wrap">
+                <img src="images/desktop-dropdown-menu.jpg" alt="">
+            </a>
+            <div class="descr">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at commodi deserunt, dicta dolore
+                enim iusto molestias quam quasi quo? Ab assumenda blanditiis eos ipsam labore officia praesentium quasi velit!
+            </div>
+        </div>
+
+        <div class="example-item">
+            <div class="title">Mobile navigation</div>
+            <a data-fslightbox="demo-images" href="images/mobile-nav.jpg" class="image-wrap">
+                <img src="images/mobile-nav.jpg" alt="">
+            </a>
+            <div class="descr">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid at commodi deserunt, dicta dolore
+                enim iusto molestias quam quasi quo? Ab assumenda blanditiis eos ipsam labore officia praesentium quasi velit!
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    refreshFsLightbox();
+</script>
+</body>
+</html>
